@@ -1,76 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Memleak : Dynamically validating static memory leak warnings ">
+    <title>Memleak by ssthappy</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Memleak</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
+    <div class="wrapper">
+      <header>
+        <h1>Memleak</h1>
+        <p>Dynamically validating static memory leak warnings</p>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/ssthappy/memleak">View on GitHub</a>
+        <p class="view"><a href="https://github.com/ssthappy/memleak">View the Project on GitHub <small>ssthappy/memleak</small></a></p>
 
-          <h1 id="project_title">Memleak</h1>
-          <h2 id="project_tagline">Dynamically validating static memory leak warnings </h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/ssthappy/memleak/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/ssthappy/memleak/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-
-<p>This site presents our memory leak validation tool and experiment data.</p>
-
-<p>SEG(Software Engineering Group), Department of Computer Science and Technology, Nanjing University</p>
-			
-<h3><a id="Introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h3>
-
-<p></p>
+        <ul>
+          <li><a href="https://github.com/ssthappy/memleak/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/ssthappy/memleak/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/ssthappy/memleak">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>This site presents our memory leak validation tool and experiment data.
+SEG, Software Engineering Group
+Department of Computer Science and Technology
+Nanjing University</p>
 
 <h3>
-<a id="Experiment" class="anchor" href="#Experiment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Experiment</h3>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h3>
 
-<p></p>
-
-<h3>
-<a id="Result" class="anchor" href="#Result" aria-hidden="true"><span class="octicon octicon-link"></span></a>Result</h3>
-
-<p></p>
+<p>Memory leaks have significant impact on software availability, performance and security. Static analysis has been widely used to find memory leaks in C/C++ programs. Although a static analysis is able to find all potential leaks in a program, it often reports a great number of false warnings. Manually validating these warnings is a daunting task, which significantly limits the practicality of the analysis. So we develop a novel dynamic technique that automatically validates and categorizes such warnings to unleash the power of static memory leak detectors. Our technique analyzes each warning that contains information regarding the leaking allocation site and the leaking path, generates test cases to cover the leaking path, and tracks objects created by the leaking allocation site. Eventually, warnings are classified into four categories: MUST-LEAK, LIKELY-NOT-LEAK, BLOAT, and MAY-LEAK.</p>
 
 <h3>
-<a id="Tool" class="anchor" href="#Tool" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tool</h3>
+<a id="warning-classification" class="anchor" href="#warning-classification" aria-hidden="true"><span class="octicon octicon-link"></span></a>Warning classification</h3>
 
-<p></p>
+<p>Warnings are classified into four categories: # MUST-LEAK, # LIKELY-NOT-LEAK, # BLOAT, and # MAY-LEAK.
+Warnings in MUST-LEAK are guaranteed by our analysis to be true leaks. Warnings in LIKELY-NOT-LEAK are highly likely to be false warnings. Although we cannot provide any formal guarantee that they are not leaks, we have high confidence that this is the case. Warnings in BLOAT are also not likely to be leaks but they should be fixed to improve performance. Using our approach, the developer's manual verification effort needs to be focused only on warnings in the category MAY-LEAK, which is often much smaller than the original set.</p>
 
 <h3>
-<a id="Contact" class="anchor" href="#Contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact</h3>
+<a id="experiment" class="anchor" href="#experiment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Experiment</h3>
 
-<p>If you have questions and suggestions, please contact us.</p>
+<p>Our instrumentation was performed using the CIL instrumentation framework. The CREST concolic testing engine was modified to perform the path-guided test case generation. The static memory leak detector used in our experiments was HP Fortify version 3.2. All experiments were executed on a quad-core machine with an Intel Core (TM) i5-3360M 2.80GHz processor, running Linux 3.2.0.</p>
+
+<h2>
+<a id="benchmark" class="anchor" href="#benchmark" aria-hidden="true"><span class="octicon octicon-link"></span></a>Benchmark</h2>
+
+<h2>
+<a id="result" class="anchor" href="#result" aria-hidden="true"><span class="octicon octicon-link"></span></a>Result</h2>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>If you have any questions or suggestions, please contact us.</p>
       </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Memleak maintained by <a href="https://github.com/ssthappy">ssthappy</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/ssthappy">ssthappy</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-
+    <script src="javascripts/scale.fix.js"></script>
     
-
   </body>
 </html>
