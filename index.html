@@ -28,10 +28,8 @@
         </ul>
       </header>
       <section>
-        <p>This site presents our memory leak validation tool and experiment data.
-SEG, Software Engineering Group
-Department of Computer Science and Technology
-Nanjing University</p>
+        <p>This site presents our memory leak validation tool and experiment data.</p>
+		<p>SEG (Software Engineering Group) , Nanjing University</p>
 
 <h3>
 <a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h3>
@@ -41,19 +39,19 @@ Nanjing University</p>
 <h3>
 <a id="warning-classification" class="anchor" href="#warning-classification" aria-hidden="true"><span class="octicon octicon-link"></span></a>Warning classification</h3>
 
-<p>Warnings are classified into four categories: # MUST-LEAK, # LIKELY-NOT-LEAK, # BLOAT, and # MAY-LEAK.
-Warnings in MUST-LEAK are guaranteed by our analysis to be true leaks. Warnings in LIKELY-NOT-LEAK are highly likely to be false warnings. Although we cannot provide any formal guarantee that they are not leaks, we have high confidence that this is the case. Warnings in BLOAT are also not likely to be leaks but they should be fixed to improve performance. Using our approach, the developer's manual verification effort needs to be focused only on warnings in the category MAY-LEAK, which is often much smaller than the original set.</p>
+<p>Warnings are classified into four categories: <b>MUST-LEAK</b>, <b>LIKELY-NOT-LEAK</b>, <b>BLOAT</b>, and <b>MAY-LEAK</b>.</p>
+<p>Warnings in MUST-LEAK are guaranteed by our analysis to be true leaks. Warnings in LIKELY-NOT-LEAK are highly likely to be false warnings. Although we cannot provide any formal guarantee that they are not leaks, we have high confidence that this is the case. Warnings in BLOAT are also not likely to be leaks but they should be fixed to improve performance. Using our approach, the developer's manual verification effort needs to be focused only on warnings in the category MAY-LEAK, which is often much smaller than the original set.</p>
 
 <h3>
 <a id="experiment" class="anchor" href="#experiment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Experiment</h3>
 
-<p>Our instrumentation was performed using the CIL instrumentation framework. The CREST concolic testing engine was modified to perform the path-guided test case generation. The static memory leak detector used in our experiments was HP Fortify version 3.2. All experiments were executed on a quad-core machine with an Intel Core (TM) i5-3360M 2.80GHz processor, running Linux 3.2.0.</p>
+<p>Our instrumentation was performed using the <a href="http://sourceforge.net/projects/cil/">CIL</a> instrumentation framework. The CREST concolic testing engine was modified to perform the path-guided test case generation. The static memory leak detector used in our experiments was HP Fortify version 3.2. All experiments were executed on a quad-core machine with an Intel Core (TM) i5-3360M 2.80GHz processor, running Linux 3.2.0.</p>
 
-<h2>
-<a id="benchmark" class="anchor" href="#benchmark" aria-hidden="true"><span class="octicon octicon-link"></span></a>Benchmark</h2>
+<h4>
+<a id="benchmark" class="anchor" href="#benchmark" aria-hidden="true"><span class="octicon octicon-link"></span></a>Benchmark</h4>
 
-<h2>
-<a id="result" class="anchor" href="#result" aria-hidden="true"><span class="octicon octicon-link"></span></a>Result</h2>
+<h4>
+<a id="result" class="anchor" href="#result" aria-hidden="true"><span class="octicon octicon-link"></span></a>Result</h4>
 
 <h3>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
