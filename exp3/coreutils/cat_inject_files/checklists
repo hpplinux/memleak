@@ -1,0 +1,58 @@
+0
+cat.c	225	MA
+cat.c	234	PP
+cat.c	234	LK
+END_PATH
+1
+cat.c	265	MA
+cat.c	360	PP
+cat.c	360	PP
+cat.c	360	LK
+END_PATH
+2
+cat.c	265	MA
+cat.c	332	BT
+cat.c	342	BF
+cat.c	372	BT
+cat.c	377	PP
+cat.c	377	PP
+cat.c	377	LK
+END_PATH
+3
+cat.c	265	MA
+cat.c	332	BT
+cat.c	342	BF
+cat.c	372	BF
+cat.c	379	BT
+cat.c	383	PP
+cat.c	383	PP
+cat.c	383	LK
+END_PATH
+4
+cat.c	185	MA
+cat.c	196	BT
+cat.c	199	PP
+cat.c	199	PP
+cat.c	199	LK
+END_PATH
+5
+cat.c	185	MA
+cat.c	196	BF
+cat.c	204	BT
+cat.c	205	PP
+cat.c	205	PP
+cat.c	205	LK
+END_PATH
+6
+cat.c	155	MA
+cat.c	160	BT
+cat.c	161	PP
+cat.c	161	PP
+cat.c	161	LK
+END_PATH
+7
+cat.c	155	MA
+cat.c	160	BF
+cat.c	171	PP
+cat.c	171	LK
+END_PATH

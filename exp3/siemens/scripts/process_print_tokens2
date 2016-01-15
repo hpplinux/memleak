@@ -1,0 +1,3552 @@
+==3870== Memcheck, a memory error detector
+==3870== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3870== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3870== Command: ./print_tokens2.exe
+==3870== 
+==3870== 
+==3870== HEAP SUMMARY:
+==3870==     in use at exit: 361 bytes in 10 blocks
+==3870==   total heap usage: 78 allocs, 68 frees, 1,993 bytes allocated
+==3870== 
+==3870== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3870==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3870==    by 0x804863E: main (print_tokens2.c:68)
+==3870== 
+==3870== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3870==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3870==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3870==    by 0x80486F5: main (print_tokens2.c:84)
+==3870== 
+==3870== 80 bytes in 2 blocks are definitely lost in loss record 3 of 4
+==3870==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3870==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3870==    by 0x80486C9: main (print_tokens2.c:81)
+==3870== 
+==3870== 240 bytes in 6 blocks are definitely lost in loss record 4 of 4
+==3870==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3870==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3870==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3870==    by 0x80486B7: main (print_tokens2.c:78)
+==3870== 
+==3870== LEAK SUMMARY:
+==3870==    definitely lost: 360 bytes in 9 blocks
+==3870==    indirectly lost: 0 bytes in 0 blocks
+==3870==      possibly lost: 0 bytes in 0 blocks
+==3870==    still reachable: 1 bytes in 1 blocks
+==3870==         suppressed: 0 bytes in 0 blocks
+==3870== 
+==3870== For counts of detected and suppressed errors, rerun with: -v
+==3870== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3871== Memcheck, a memory error detector
+==3871== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3871== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3871== Command: ./print_tokens2.exe
+==3871== 
+==3871== 
+==3871== HEAP SUMMARY:
+==3871==     in use at exit: 121 bytes in 4 blocks
+==3871==   total heap usage: 44 allocs, 40 frees, 1,081 bytes allocated
+==3871== 
+==3871== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3871==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3871==    by 0x804863E: main (print_tokens2.c:68)
+==3871== 
+==3871== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3871==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3871==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3871==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3871==    by 0x80486B7: main (print_tokens2.c:78)
+==3871== 
+==3871== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3871==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3871==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3871==    by 0x80486C9: main (print_tokens2.c:81)
+==3871== 
+==3871== 40 bytes in 1 blocks are definitely lost in loss record 4 of 4
+==3871==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3871==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3871==    by 0x80486F5: main (print_tokens2.c:84)
+==3871== 
+==3871== LEAK SUMMARY:
+==3871==    definitely lost: 120 bytes in 3 blocks
+==3871==    indirectly lost: 0 bytes in 0 blocks
+==3871==      possibly lost: 0 bytes in 0 blocks
+==3871==    still reachable: 1 bytes in 1 blocks
+==3871==         suppressed: 0 bytes in 0 blocks
+==3871== 
+==3871== For counts of detected and suppressed errors, rerun with: -v
+==3871== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3874== Memcheck, a memory error detector
+==3874== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3874== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3874== Command: ./print_tokens2.exe
+==3874== 
+==3874== 
+==3874== HEAP SUMMARY:
+==3874==     in use at exit: 41 bytes in 2 blocks
+==3874==   total heap usage: 20 allocs, 18 frees, 473 bytes allocated
+==3874== 
+==3874== 1 bytes in 1 blocks are still reachable in loss record 1 of 2
+==3874==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3874==    by 0x804863E: main (print_tokens2.c:68)
+==3874== 
+==3874== 40 bytes in 1 blocks are definitely lost in loss record 2 of 2
+==3874==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3874==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3874==    by 0x80486F5: main (print_tokens2.c:84)
+==3874== 
+==3874== LEAK SUMMARY:
+==3874==    definitely lost: 40 bytes in 1 blocks
+==3874==    indirectly lost: 0 bytes in 0 blocks
+==3874==      possibly lost: 0 bytes in 0 blocks
+==3874==    still reachable: 1 bytes in 1 blocks
+==3874==         suppressed: 0 bytes in 0 blocks
+==3874== 
+==3874== For counts of detected and suppressed errors, rerun with: -v
+==3874== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==3875== Memcheck, a memory error detector
+==3875== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3875== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3875== Command: ./print_tokens2.exe
+==3875== 
+==3875== 
+==3875== HEAP SUMMARY:
+==3875==     in use at exit: 401 bytes in 11 blocks
+==3875==   total heap usage: 95 allocs, 84 frees, 2,417 bytes allocated
+==3875== 
+==3875== 1 bytes in 1 blocks are still reachable in loss record 1 of 5
+==3875==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3875==    by 0x804863E: main (print_tokens2.c:68)
+==3875== 
+==3875== 40 bytes in 1 blocks are definitely lost in loss record 2 of 5
+==3875==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3875==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3875==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3875==    by 0x80486B7: main (print_tokens2.c:78)
+==3875== 
+==3875== 40 bytes in 1 blocks are definitely lost in loss record 3 of 5
+==3875==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3875==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3875==    by 0x80486F5: main (print_tokens2.c:84)
+==3875== 
+==3875== 120 bytes in 3 blocks are definitely lost in loss record 4 of 5
+==3875==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3875==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3875==    by 0x80486C9: main (print_tokens2.c:81)
+==3875== 
+==3875== 200 bytes in 5 blocks are definitely lost in loss record 5 of 5
+==3875==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3875==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3875==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3875==    by 0x80486D5: main (print_tokens2.c:82)
+==3875== 
+==3875== LEAK SUMMARY:
+==3875==    definitely lost: 400 bytes in 10 blocks
+==3875==    indirectly lost: 0 bytes in 0 blocks
+==3875==      possibly lost: 0 bytes in 0 blocks
+==3875==    still reachable: 1 bytes in 1 blocks
+==3875==         suppressed: 0 bytes in 0 blocks
+==3875== 
+==3875== For counts of detected and suppressed errors, rerun with: -v
+==3875== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)
+==3877== Memcheck, a memory error detector
+==3877== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3877== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3877== Command: ./print_tokens2.exe
+==3877== 
+==3877== 
+==3877== HEAP SUMMARY:
+==3877==     in use at exit: 441 bytes in 12 blocks
+==3877==   total heap usage: 84 allocs, 72 frees, 2,169 bytes allocated
+==3877== 
+==3877== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3877==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3877==    by 0x804863E: main (print_tokens2.c:68)
+==3877== 
+==3877== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3877==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3877==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3877==    by 0x80486C9: main (print_tokens2.c:81)
+==3877== 
+==3877== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3877==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3877==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3877==    by 0x80486F5: main (print_tokens2.c:84)
+==3877== 
+==3877== 360 bytes in 9 blocks are definitely lost in loss record 4 of 4
+==3877==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3877==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3877==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3877==    by 0x80486B7: main (print_tokens2.c:78)
+==3877== 
+==3877== LEAK SUMMARY:
+==3877==    definitely lost: 440 bytes in 11 blocks
+==3877==    indirectly lost: 0 bytes in 0 blocks
+==3877==      possibly lost: 0 bytes in 0 blocks
+==3877==    still reachable: 1 bytes in 1 blocks
+==3877==         suppressed: 0 bytes in 0 blocks
+==3877== 
+==3877== For counts of detected and suppressed errors, rerun with: -v
+==3877== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3878== Memcheck, a memory error detector
+==3878== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3878== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3878== Command: ./print_tokens2.exe
+==3878== 
+==3878== 
+==3878== HEAP SUMMARY:
+==3878==     in use at exit: 321 bytes in 9 blocks
+==3878==   total heap usage: 69 allocs, 60 frees, 1,761 bytes allocated
+==3878== 
+==3878== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3878==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3878==    by 0x804863E: main (print_tokens2.c:68)
+==3878== 
+==3878== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3878==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3878==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3878==    by 0x80486C9: main (print_tokens2.c:81)
+==3878== 
+==3878== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3878==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3878==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3878==    by 0x80486F5: main (print_tokens2.c:84)
+==3878== 
+==3878== 240 bytes in 6 blocks are definitely lost in loss record 4 of 4
+==3878==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3878==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3878==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3878==    by 0x80486B7: main (print_tokens2.c:78)
+==3878== 
+==3878== LEAK SUMMARY:
+==3878==    definitely lost: 320 bytes in 8 blocks
+==3878==    indirectly lost: 0 bytes in 0 blocks
+==3878==      possibly lost: 0 bytes in 0 blocks
+==3878==    still reachable: 1 bytes in 1 blocks
+==3878==         suppressed: 0 bytes in 0 blocks
+==3878== 
+==3878== For counts of detected and suppressed errors, rerun with: -v
+==3878== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3879== Memcheck, a memory error detector
+==3879== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3879== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3879== Command: ./print_tokens2.exe
+==3879== 
+==3879== 
+==3879== HEAP SUMMARY:
+==3879==     in use at exit: 201 bytes in 6 blocks
+==3879==   total heap usage: 54 allocs, 48 frees, 1,353 bytes allocated
+==3879== 
+==3879== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3879==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3879==    by 0x804863E: main (print_tokens2.c:68)
+==3879== 
+==3879== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3879==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3879==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3879==    by 0x80486C9: main (print_tokens2.c:81)
+==3879== 
+==3879== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3879==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3879==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3879==    by 0x80486F5: main (print_tokens2.c:84)
+==3879== 
+==3879== 120 bytes in 3 blocks are definitely lost in loss record 4 of 4
+==3879==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3879==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3879==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3879==    by 0x80486B7: main (print_tokens2.c:78)
+==3879== 
+==3879== LEAK SUMMARY:
+==3879==    definitely lost: 200 bytes in 5 blocks
+==3879==    indirectly lost: 0 bytes in 0 blocks
+==3879==      possibly lost: 0 bytes in 0 blocks
+==3879==    still reachable: 1 bytes in 1 blocks
+==3879==         suppressed: 0 bytes in 0 blocks
+==3879== 
+==3879== For counts of detected and suppressed errors, rerun with: -v
+==3879== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3880== Memcheck, a memory error detector
+==3880== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3880== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3880== Command: ./print_tokens2.exe
+==3880== 
+==3880== 
+==3880== HEAP SUMMARY:
+==3880==     in use at exit: 361 bytes in 10 blocks
+==3880==   total heap usage: 84 allocs, 74 frees, 2,137 bytes allocated
+==3880== 
+==3880== 1 bytes in 1 blocks are still reachable in loss record 1 of 5
+==3880==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3880==    by 0x804863E: main (print_tokens2.c:68)
+==3880== 
+==3880== 40 bytes in 1 blocks are definitely lost in loss record 2 of 5
+==3880==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3880==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3880==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3880==    by 0x80486B7: main (print_tokens2.c:78)
+==3880== 
+==3880== 40 bytes in 1 blocks are definitely lost in loss record 3 of 5
+==3880==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3880==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3880==    by 0x80486F5: main (print_tokens2.c:84)
+==3880== 
+==3880== 80 bytes in 2 blocks are definitely lost in loss record 4 of 5
+==3880==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3880==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3880==    by 0x80486C9: main (print_tokens2.c:81)
+==3880== 
+==3880== 200 bytes in 5 blocks are definitely lost in loss record 5 of 5
+==3880==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3880==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3880==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3880==    by 0x80486D5: main (print_tokens2.c:82)
+==3880== 
+==3880== LEAK SUMMARY:
+==3880==    definitely lost: 360 bytes in 9 blocks
+==3880==    indirectly lost: 0 bytes in 0 blocks
+==3880==      possibly lost: 0 bytes in 0 blocks
+==3880==    still reachable: 1 bytes in 1 blocks
+==3880==         suppressed: 0 bytes in 0 blocks
+==3880== 
+==3880== For counts of detected and suppressed errors, rerun with: -v
+==3880== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)
+==3882== Memcheck, a memory error detector
+==3882== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3882== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3882== Command: ./print_tokens2.exe
+==3882== 
+==3882== 
+==3882== HEAP SUMMARY:
+==3882==     in use at exit: 121 bytes in 4 blocks
+==3882==   total heap usage: 42 allocs, 38 frees, 1,033 bytes allocated
+==3882== 
+==3882== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3882==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3882==    by 0x804863E: main (print_tokens2.c:68)
+==3882== 
+==3882== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3882==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3882==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3882==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3882==    by 0x80486B7: main (print_tokens2.c:78)
+==3882== 
+==3882== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3882==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3882==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3882==    by 0x80486C9: main (print_tokens2.c:81)
+==3882== 
+==3882== 40 bytes in 1 blocks are definitely lost in loss record 4 of 4
+==3882==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3882==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3882==    by 0x80486F5: main (print_tokens2.c:84)
+==3882== 
+==3882== LEAK SUMMARY:
+==3882==    definitely lost: 120 bytes in 3 blocks
+==3882==    indirectly lost: 0 bytes in 0 blocks
+==3882==      possibly lost: 0 bytes in 0 blocks
+==3882==    still reachable: 1 bytes in 1 blocks
+==3882==         suppressed: 0 bytes in 0 blocks
+==3882== 
+==3882== For counts of detected and suppressed errors, rerun with: -v
+==3882== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3883== Memcheck, a memory error detector
+==3883== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3883== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3883== Command: ./print_tokens2.exe
+==3883== 
+==3883== 
+==3883== HEAP SUMMARY:
+==3883==     in use at exit: 161 bytes in 5 blocks
+==3883==   total heap usage: 47 allocs, 42 frees, 1,169 bytes allocated
+==3883== 
+==3883== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3883==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3883==    by 0x804863E: main (print_tokens2.c:68)
+==3883== 
+==3883== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3883==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3883==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3883==    by 0x80486C9: main (print_tokens2.c:81)
+==3883== 
+==3883== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3883==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3883==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3883==    by 0x80486F5: main (print_tokens2.c:84)
+==3883== 
+==3883== 80 bytes in 2 blocks are definitely lost in loss record 4 of 4
+==3883==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3883==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3883==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3883==    by 0x80486B7: main (print_tokens2.c:78)
+==3883== 
+==3883== LEAK SUMMARY:
+==3883==    definitely lost: 160 bytes in 4 blocks
+==3883==    indirectly lost: 0 bytes in 0 blocks
+==3883==      possibly lost: 0 bytes in 0 blocks
+==3883==    still reachable: 1 bytes in 1 blocks
+==3883==         suppressed: 0 bytes in 0 blocks
+==3883== 
+==3883== For counts of detected and suppressed errors, rerun with: -v
+==3883== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3884== Memcheck, a memory error detector
+==3884== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3884== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3884== Command: ./print_tokens2.exe
+==3884== 
+==3884== 
+==3884== HEAP SUMMARY:
+==3884==     in use at exit: 361 bytes in 10 blocks
+==3884==   total heap usage: 84 allocs, 74 frees, 2,137 bytes allocated
+==3884== 
+==3884== 1 bytes in 1 blocks are still reachable in loss record 1 of 5
+==3884==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3884==    by 0x804863E: main (print_tokens2.c:68)
+==3884== 
+==3884== 40 bytes in 1 blocks are definitely lost in loss record 2 of 5
+==3884==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3884==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3884==    by 0x80486F5: main (print_tokens2.c:84)
+==3884== 
+==3884== 80 bytes in 2 blocks are definitely lost in loss record 3 of 5
+==3884==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3884==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3884==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3884==    by 0x80486B7: main (print_tokens2.c:78)
+==3884== 
+==3884== 80 bytes in 2 blocks are definitely lost in loss record 4 of 5
+==3884==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3884==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3884==    by 0x80486C9: main (print_tokens2.c:81)
+==3884== 
+==3884== 160 bytes in 4 blocks are definitely lost in loss record 5 of 5
+==3884==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3884==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3884==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3884==    by 0x80486D5: main (print_tokens2.c:82)
+==3884== 
+==3884== LEAK SUMMARY:
+==3884==    definitely lost: 360 bytes in 9 blocks
+==3884==    indirectly lost: 0 bytes in 0 blocks
+==3884==      possibly lost: 0 bytes in 0 blocks
+==3884==    still reachable: 1 bytes in 1 blocks
+==3884==         suppressed: 0 bytes in 0 blocks
+==3884== 
+==3884== For counts of detected and suppressed errors, rerun with: -v
+==3884== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)
+==3886== Memcheck, a memory error detector
+==3886== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3886== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3886== Command: ./print_tokens2.exe
+==3886== 
+==3886== 
+==3886== HEAP SUMMARY:
+==3886==     in use at exit: 161 bytes in 5 blocks
+==3886==   total heap usage: 49 allocs, 44 frees, 1,217 bytes allocated
+==3886== 
+==3886== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3886==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3886==    by 0x804863E: main (print_tokens2.c:68)
+==3886== 
+==3886== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3886==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3886==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3886==    by 0x80486C9: main (print_tokens2.c:81)
+==3886== 
+==3886== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3886==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3886==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3886==    by 0x80486F5: main (print_tokens2.c:84)
+==3886== 
+==3886== 80 bytes in 2 blocks are definitely lost in loss record 4 of 4
+==3886==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3886==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3886==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3886==    by 0x80486B7: main (print_tokens2.c:78)
+==3886== 
+==3886== LEAK SUMMARY:
+==3886==    definitely lost: 160 bytes in 4 blocks
+==3886==    indirectly lost: 0 bytes in 0 blocks
+==3886==      possibly lost: 0 bytes in 0 blocks
+==3886==    still reachable: 1 bytes in 1 blocks
+==3886==         suppressed: 0 bytes in 0 blocks
+==3886== 
+==3886== For counts of detected and suppressed errors, rerun with: -v
+==3886== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3888== Memcheck, a memory error detector
+==3888== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3888== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3888== Command: ./print_tokens2.exe
+==3888== 
+==3888== 
+==3888== HEAP SUMMARY:
+==3888==     in use at exit: 281 bytes in 8 blocks
+==3888==   total heap usage: 64 allocs, 56 frees, 1,625 bytes allocated
+==3888== 
+==3888== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3888==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3888==    by 0x804863E: main (print_tokens2.c:68)
+==3888== 
+==3888== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3888==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3888==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3888==    by 0x80486C9: main (print_tokens2.c:81)
+==3888== 
+==3888== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3888==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3888==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3888==    by 0x80486F5: main (print_tokens2.c:84)
+==3888== 
+==3888== 200 bytes in 5 blocks are definitely lost in loss record 4 of 4
+==3888==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3888==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3888==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3888==    by 0x80486B7: main (print_tokens2.c:78)
+==3888== 
+==3888== LEAK SUMMARY:
+==3888==    definitely lost: 280 bytes in 7 blocks
+==3888==    indirectly lost: 0 bytes in 0 blocks
+==3888==      possibly lost: 0 bytes in 0 blocks
+==3888==    still reachable: 1 bytes in 1 blocks
+==3888==         suppressed: 0 bytes in 0 blocks
+==3888== 
+==3888== For counts of detected and suppressed errors, rerun with: -v
+==3888== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3889== Memcheck, a memory error detector
+==3889== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3889== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3889== Command: ./print_tokens2.exe
+==3889== 
+==3889== 
+==3889== HEAP SUMMARY:
+==3889==     in use at exit: 521 bytes in 14 blocks
+==3889==   total heap usage: 94 allocs, 80 frees, 2,441 bytes allocated
+==3889== 
+==3889== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3889==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3889==    by 0x804863E: main (print_tokens2.c:68)
+==3889== 
+==3889== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3889==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3889==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3889==    by 0x80486C9: main (print_tokens2.c:81)
+==3889== 
+==3889== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3889==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3889==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3889==    by 0x80486F5: main (print_tokens2.c:84)
+==3889== 
+==3889== 440 bytes in 11 blocks are definitely lost in loss record 4 of 4
+==3889==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3889==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3889==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3889==    by 0x80486B7: main (print_tokens2.c:78)
+==3889== 
+==3889== LEAK SUMMARY:
+==3889==    definitely lost: 520 bytes in 13 blocks
+==3889==    indirectly lost: 0 bytes in 0 blocks
+==3889==      possibly lost: 0 bytes in 0 blocks
+==3889==    still reachable: 1 bytes in 1 blocks
+==3889==         suppressed: 0 bytes in 0 blocks
+==3889== 
+==3889== For counts of detected and suppressed errors, rerun with: -v
+==3889== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3890== Memcheck, a memory error detector
+==3890== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3890== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3890== Command: ./print_tokens2.exe
+==3890== 
+==3890== 
+==3890== HEAP SUMMARY:
+==3890==     in use at exit: 241 bytes in 7 blocks
+==3890==   total heap usage: 59 allocs, 52 frees, 1,489 bytes allocated
+==3890== 
+==3890== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3890==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3890==    by 0x804863E: main (print_tokens2.c:68)
+==3890== 
+==3890== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3890==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3890==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3890==    by 0x80486C9: main (print_tokens2.c:81)
+==3890== 
+==3890== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3890==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3890==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3890==    by 0x80486F5: main (print_tokens2.c:84)
+==3890== 
+==3890== 160 bytes in 4 blocks are definitely lost in loss record 4 of 4
+==3890==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3890==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3890==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3890==    by 0x80486B7: main (print_tokens2.c:78)
+==3890== 
+==3890== LEAK SUMMARY:
+==3890==    definitely lost: 240 bytes in 6 blocks
+==3890==    indirectly lost: 0 bytes in 0 blocks
+==3890==      possibly lost: 0 bytes in 0 blocks
+==3890==    still reachable: 1 bytes in 1 blocks
+==3890==         suppressed: 0 bytes in 0 blocks
+==3890== 
+==3890== For counts of detected and suppressed errors, rerun with: -v
+==3890== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3892== Memcheck, a memory error detector
+==3892== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3892== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3892== Command: ./print_tokens2.exe
+==3892== 
+==3892== 
+==3892== HEAP SUMMARY:
+==3892==     in use at exit: 601 bytes in 16 blocks
+==3892==   total heap usage: 104 allocs, 88 frees, 2,713 bytes allocated
+==3892== 
+==3892== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3892==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3892==    by 0x804863E: main (print_tokens2.c:68)
+==3892== 
+==3892== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3892==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3892==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3892==    by 0x80486C9: main (print_tokens2.c:81)
+==3892== 
+==3892== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3892==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3892==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3892==    by 0x80486F5: main (print_tokens2.c:84)
+==3892== 
+==3892== 520 bytes in 13 blocks are definitely lost in loss record 4 of 4
+==3892==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3892==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3892==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3892==    by 0x80486B7: main (print_tokens2.c:78)
+==3892== 
+==3892== LEAK SUMMARY:
+==3892==    definitely lost: 600 bytes in 15 blocks
+==3892==    indirectly lost: 0 bytes in 0 blocks
+==3892==      possibly lost: 0 bytes in 0 blocks
+==3892==    still reachable: 1 bytes in 1 blocks
+==3892==         suppressed: 0 bytes in 0 blocks
+==3892== 
+==3892== For counts of detected and suppressed errors, rerun with: -v
+==3892== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3893== Memcheck, a memory error detector
+==3893== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3893== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3893== Command: ./print_tokens2.exe
+==3893== 
+==3893== 
+==3893== HEAP SUMMARY:
+==3893==     in use at exit: 841 bytes in 22 blocks
+==3893==   total heap usage: 142 allocs, 120 frees, 3,721 bytes allocated
+==3893== 
+==3893== 1 bytes in 1 blocks are still reachable in loss record 1 of 5
+==3893==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3893==    by 0x804863E: main (print_tokens2.c:68)
+==3893== 
+==3893== 40 bytes in 1 blocks are definitely lost in loss record 2 of 5
+==3893==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3893==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3893==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3893==    by 0x80486B7: main (print_tokens2.c:78)
+==3893== 
+==3893== 40 bytes in 1 blocks are definitely lost in loss record 3 of 5
+==3893==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3893==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3893==    by 0x80486F5: main (print_tokens2.c:84)
+==3893== 
+==3893== 80 bytes in 2 blocks are definitely lost in loss record 4 of 5
+==3893==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3893==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3893==    by 0x80486C9: main (print_tokens2.c:81)
+==3893== 
+==3893== 680 bytes in 17 blocks are definitely lost in loss record 5 of 5
+==3893==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3893==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3893==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3893==    by 0x80486D5: main (print_tokens2.c:82)
+==3893== 
+==3893== LEAK SUMMARY:
+==3893==    definitely lost: 840 bytes in 21 blocks
+==3893==    indirectly lost: 0 bytes in 0 blocks
+==3893==      possibly lost: 0 bytes in 0 blocks
+==3893==    still reachable: 1 bytes in 1 blocks
+==3893==         suppressed: 0 bytes in 0 blocks
+==3893== 
+==3893== For counts of detected and suppressed errors, rerun with: -v
+==3893== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)
+==3895== Memcheck, a memory error detector
+==3895== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3895== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3895== Command: ./print_tokens2.exe
+==3895== 
+==3895== 
+==3895== HEAP SUMMARY:
+==3895==     in use at exit: 361 bytes in 10 blocks
+==3895==   total heap usage: 74 allocs, 64 frees, 1,897 bytes allocated
+==3895== 
+==3895== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3895==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3895==    by 0x804863E: main (print_tokens2.c:68)
+==3895== 
+==3895== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3895==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3895==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3895==    by 0x80486C9: main (print_tokens2.c:81)
+==3895== 
+==3895== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3895==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3895==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3895==    by 0x80486F5: main (print_tokens2.c:84)
+==3895== 
+==3895== 280 bytes in 7 blocks are definitely lost in loss record 4 of 4
+==3895==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3895==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3895==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3895==    by 0x80486B7: main (print_tokens2.c:78)
+==3895== 
+==3895== LEAK SUMMARY:
+==3895==    definitely lost: 360 bytes in 9 blocks
+==3895==    indirectly lost: 0 bytes in 0 blocks
+==3895==      possibly lost: 0 bytes in 0 blocks
+==3895==    still reachable: 1 bytes in 1 blocks
+==3895==         suppressed: 0 bytes in 0 blocks
+==3895== 
+==3895== For counts of detected and suppressed errors, rerun with: -v
+==3895== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3896== Memcheck, a memory error detector
+==3896== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3896== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3896== Command: ./print_tokens2.exe
+==3896== 
+==3896== 
+==3896== HEAP SUMMARY:
+==3896==     in use at exit: 361 bytes in 10 blocks
+==3896==   total heap usage: 72 allocs, 62 frees, 1,849 bytes allocated
+==3896== 
+==3896== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3896==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3896==    by 0x804863E: main (print_tokens2.c:68)
+==3896== 
+==3896== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3896==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3896==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3896==    by 0x80486C9: main (print_tokens2.c:81)
+==3896== 
+==3896== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3896==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3896==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3896==    by 0x80486F5: main (print_tokens2.c:84)
+==3896== 
+==3896== 280 bytes in 7 blocks are definitely lost in loss record 4 of 4
+==3896==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3896==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3896==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3896==    by 0x80486B7: main (print_tokens2.c:78)
+==3896== 
+==3896== LEAK SUMMARY:
+==3896==    definitely lost: 360 bytes in 9 blocks
+==3896==    indirectly lost: 0 bytes in 0 blocks
+==3896==      possibly lost: 0 bytes in 0 blocks
+==3896==    still reachable: 1 bytes in 1 blocks
+==3896==         suppressed: 0 bytes in 0 blocks
+==3896== 
+==3896== For counts of detected and suppressed errors, rerun with: -v
+==3896== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3899== Memcheck, a memory error detector
+==3899== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3899== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3899== Command: ./print_tokens2.exe
+==3899== 
+==3899== 
+==3899== HEAP SUMMARY:
+==3899==     in use at exit: 281 bytes in 8 blocks
+==3899==   total heap usage: 78 allocs, 70 frees, 1,961 bytes allocated
+==3899== 
+==3899== 1 bytes in 1 blocks are still reachable in loss record 1 of 5
+==3899==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3899==    by 0x804863E: main (print_tokens2.c:68)
+==3899== 
+==3899== 40 bytes in 1 blocks are definitely lost in loss record 2 of 5
+==3899==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3899==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3899==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3899==    by 0x80486B7: main (print_tokens2.c:78)
+==3899== 
+==3899== 40 bytes in 1 blocks are definitely lost in loss record 3 of 5
+==3899==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3899==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3899==    by 0x80486F5: main (print_tokens2.c:84)
+==3899== 
+==3899== 80 bytes in 2 blocks are definitely lost in loss record 4 of 5
+==3899==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3899==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3899==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3899==    by 0x80486D5: main (print_tokens2.c:82)
+==3899== 
+==3899== 120 bytes in 3 blocks are definitely lost in loss record 5 of 5
+==3899==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3899==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3899==    by 0x80486C9: main (print_tokens2.c:81)
+==3899== 
+==3899== LEAK SUMMARY:
+==3899==    definitely lost: 280 bytes in 7 blocks
+==3899==    indirectly lost: 0 bytes in 0 blocks
+==3899==      possibly lost: 0 bytes in 0 blocks
+==3899==    still reachable: 1 bytes in 1 blocks
+==3899==         suppressed: 0 bytes in 0 blocks
+==3899== 
+==3899== For counts of detected and suppressed errors, rerun with: -v
+==3899== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)
+==3900== Memcheck, a memory error detector
+==3900== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3900== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3900== Command: ./print_tokens2.exe
+==3900== 
+==3900== 
+==3900== HEAP SUMMARY:
+==3900==     in use at exit: 401 bytes in 11 blocks
+==3900==   total heap usage: 83 allocs, 72 frees, 2,129 bytes allocated
+==3900== 
+==3900== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3900==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3900==    by 0x804863E: main (print_tokens2.c:68)
+==3900== 
+==3900== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3900==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3900==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3900==    by 0x80486F5: main (print_tokens2.c:84)
+==3900== 
+==3900== 80 bytes in 2 blocks are definitely lost in loss record 3 of 4
+==3900==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3900==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3900==    by 0x80486C9: main (print_tokens2.c:81)
+==3900== 
+==3900== 280 bytes in 7 blocks are definitely lost in loss record 4 of 4
+==3900==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3900==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3900==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3900==    by 0x80486B7: main (print_tokens2.c:78)
+==3900== 
+==3900== LEAK SUMMARY:
+==3900==    definitely lost: 400 bytes in 10 blocks
+==3900==    indirectly lost: 0 bytes in 0 blocks
+==3900==      possibly lost: 0 bytes in 0 blocks
+==3900==    still reachable: 1 bytes in 1 blocks
+==3900==         suppressed: 0 bytes in 0 blocks
+==3900== 
+==3900== For counts of detected and suppressed errors, rerun with: -v
+==3900== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3901== Memcheck, a memory error detector
+==3901== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3901== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3901== Command: ./print_tokens2.exe
+==3901== 
+==3901== 
+==3901== HEAP SUMMARY:
+==3901==     in use at exit: 161 bytes in 5 blocks
+==3901==   total heap usage: 49 allocs, 44 frees, 1,217 bytes allocated
+==3901== 
+==3901== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3901==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3901==    by 0x804863E: main (print_tokens2.c:68)
+==3901== 
+==3901== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3901==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3901==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3901==    by 0x80486C9: main (print_tokens2.c:81)
+==3901== 
+==3901== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3901==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3901==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3901==    by 0x80486F5: main (print_tokens2.c:84)
+==3901== 
+==3901== 80 bytes in 2 blocks are definitely lost in loss record 4 of 4
+==3901==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3901==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3901==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3901==    by 0x80486B7: main (print_tokens2.c:78)
+==3901== 
+==3901== LEAK SUMMARY:
+==3901==    definitely lost: 160 bytes in 4 blocks
+==3901==    indirectly lost: 0 bytes in 0 blocks
+==3901==      possibly lost: 0 bytes in 0 blocks
+==3901==    still reachable: 1 bytes in 1 blocks
+==3901==         suppressed: 0 bytes in 0 blocks
+==3901== 
+==3901== For counts of detected and suppressed errors, rerun with: -v
+==3901== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3902== Memcheck, a memory error detector
+==3902== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3902== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3902== Command: ./print_tokens2.exe
+==3902== 
+==3902== 
+==3902== HEAP SUMMARY:
+==3902==     in use at exit: 361 bytes in 10 blocks
+==3902==   total heap usage: 78 allocs, 68 frees, 1,993 bytes allocated
+==3902== 
+==3902== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3902==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3902==    by 0x804863E: main (print_tokens2.c:68)
+==3902== 
+==3902== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3902==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3902==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3902==    by 0x80486F5: main (print_tokens2.c:84)
+==3902== 
+==3902== 80 bytes in 2 blocks are definitely lost in loss record 3 of 4
+==3902==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3902==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3902==    by 0x80486C9: main (print_tokens2.c:81)
+==3902== 
+==3902== 240 bytes in 6 blocks are definitely lost in loss record 4 of 4
+==3902==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3902==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3902==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3902==    by 0x80486B7: main (print_tokens2.c:78)
+==3902== 
+==3902== LEAK SUMMARY:
+==3902==    definitely lost: 360 bytes in 9 blocks
+==3902==    indirectly lost: 0 bytes in 0 blocks
+==3902==      possibly lost: 0 bytes in 0 blocks
+==3902==    still reachable: 1 bytes in 1 blocks
+==3902==         suppressed: 0 bytes in 0 blocks
+==3902== 
+==3902== For counts of detected and suppressed errors, rerun with: -v
+==3902== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3904== Memcheck, a memory error detector
+==3904== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3904== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3904== Command: ./print_tokens2.exe
+==3904== 
+==3904== 
+==3904== HEAP SUMMARY:
+==3904==     in use at exit: 321 bytes in 9 blocks
+==3904==   total heap usage: 81 allocs, 72 frees, 2,049 bytes allocated
+==3904== 
+==3904== 1 bytes in 1 blocks are still reachable in loss record 1 of 5
+==3904==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3904==    by 0x804863E: main (print_tokens2.c:68)
+==3904== 
+==3904== 40 bytes in 1 blocks are definitely lost in loss record 2 of 5
+==3904==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3904==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3904==    by 0x80486F5: main (print_tokens2.c:84)
+==3904== 
+==3904== 80 bytes in 2 blocks are definitely lost in loss record 3 of 5
+==3904==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3904==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3904==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3904==    by 0x80486B7: main (print_tokens2.c:78)
+==3904== 
+==3904== 80 bytes in 2 blocks are definitely lost in loss record 4 of 5
+==3904==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3904==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3904==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3904==    by 0x80486D5: main (print_tokens2.c:82)
+==3904== 
+==3904== 120 bytes in 3 blocks are definitely lost in loss record 5 of 5
+==3904==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3904==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3904==    by 0x80486C9: main (print_tokens2.c:81)
+==3904== 
+==3904== LEAK SUMMARY:
+==3904==    definitely lost: 320 bytes in 8 blocks
+==3904==    indirectly lost: 0 bytes in 0 blocks
+==3904==      possibly lost: 0 bytes in 0 blocks
+==3904==    still reachable: 1 bytes in 1 blocks
+==3904==         suppressed: 0 bytes in 0 blocks
+==3904== 
+==3904== For counts of detected and suppressed errors, rerun with: -v
+==3904== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)
+==3906== Memcheck, a memory error detector
+==3906== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3906== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3906== Command: ./print_tokens2.exe
+==3906== 
+==3906== 
+==3906== HEAP SUMMARY:
+==3906==     in use at exit: 321 bytes in 9 blocks
+==3906==   total heap usage: 69 allocs, 60 frees, 1,761 bytes allocated
+==3906== 
+==3906== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3906==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3906==    by 0x804863E: main (print_tokens2.c:68)
+==3906== 
+==3906== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3906==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3906==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3906==    by 0x80486C9: main (print_tokens2.c:81)
+==3906== 
+==3906== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3906==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3906==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3906==    by 0x80486F5: main (print_tokens2.c:84)
+==3906== 
+==3906== 240 bytes in 6 blocks are definitely lost in loss record 4 of 4
+==3906==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3906==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3906==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3906==    by 0x80486B7: main (print_tokens2.c:78)
+==3906== 
+==3906== LEAK SUMMARY:
+==3906==    definitely lost: 320 bytes in 8 blocks
+==3906==    indirectly lost: 0 bytes in 0 blocks
+==3906==      possibly lost: 0 bytes in 0 blocks
+==3906==    still reachable: 1 bytes in 1 blocks
+==3906==         suppressed: 0 bytes in 0 blocks
+==3906== 
+==3906== For counts of detected and suppressed errors, rerun with: -v
+==3906== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3907== Memcheck, a memory error detector
+==3907== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3907== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3907== Command: ./print_tokens2.exe
+==3907== 
+==3907== 
+==3907== HEAP SUMMARY:
+==3907==     in use at exit: 361 bytes in 10 blocks
+==3907==   total heap usage: 74 allocs, 64 frees, 1,897 bytes allocated
+==3907== 
+==3907== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3907==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3907==    by 0x804863E: main (print_tokens2.c:68)
+==3907== 
+==3907== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3907==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3907==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3907==    by 0x80486C9: main (print_tokens2.c:81)
+==3907== 
+==3907== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3907==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3907==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3907==    by 0x80486F5: main (print_tokens2.c:84)
+==3907== 
+==3907== 280 bytes in 7 blocks are definitely lost in loss record 4 of 4
+==3907==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3907==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3907==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3907==    by 0x80486B7: main (print_tokens2.c:78)
+==3907== 
+==3907== LEAK SUMMARY:
+==3907==    definitely lost: 360 bytes in 9 blocks
+==3907==    indirectly lost: 0 bytes in 0 blocks
+==3907==      possibly lost: 0 bytes in 0 blocks
+==3907==    still reachable: 1 bytes in 1 blocks
+==3907==         suppressed: 0 bytes in 0 blocks
+==3907== 
+==3907== For counts of detected and suppressed errors, rerun with: -v
+==3907== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3909== Memcheck, a memory error detector
+==3909== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3909== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3909== Command: ./print_tokens2.exe
+==3909== 
+==3909== 
+==3909== HEAP SUMMARY:
+==3909==     in use at exit: 521 bytes in 14 blocks
+==3909==   total heap usage: 94 allocs, 80 frees, 2,441 bytes allocated
+==3909== 
+==3909== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3909==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3909==    by 0x804863E: main (print_tokens2.c:68)
+==3909== 
+==3909== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3909==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3909==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3909==    by 0x80486C9: main (print_tokens2.c:81)
+==3909== 
+==3909== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3909==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3909==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3909==    by 0x80486F5: main (print_tokens2.c:84)
+==3909== 
+==3909== 440 bytes in 11 blocks are definitely lost in loss record 4 of 4
+==3909==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3909==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3909==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3909==    by 0x80486B7: main (print_tokens2.c:78)
+==3909== 
+==3909== LEAK SUMMARY:
+==3909==    definitely lost: 520 bytes in 13 blocks
+==3909==    indirectly lost: 0 bytes in 0 blocks
+==3909==      possibly lost: 0 bytes in 0 blocks
+==3909==    still reachable: 1 bytes in 1 blocks
+==3909==         suppressed: 0 bytes in 0 blocks
+==3909== 
+==3909== For counts of detected and suppressed errors, rerun with: -v
+==3909== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3910== Memcheck, a memory error detector
+==3910== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3910== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3910== Command: ./print_tokens2.exe
+==3910== 
+==3910== 
+==3910== HEAP SUMMARY:
+==3910==     in use at exit: 521 bytes in 14 blocks
+==3910==   total heap usage: 94 allocs, 80 frees, 2,441 bytes allocated
+==3910== 
+==3910== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3910==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3910==    by 0x804863E: main (print_tokens2.c:68)
+==3910== 
+==3910== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3910==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3910==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3910==    by 0x80486C9: main (print_tokens2.c:81)
+==3910== 
+==3910== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3910==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3910==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3910==    by 0x80486F5: main (print_tokens2.c:84)
+==3910== 
+==3910== 440 bytes in 11 blocks are definitely lost in loss record 4 of 4
+==3910==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3910==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3910==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3910==    by 0x80486B7: main (print_tokens2.c:78)
+==3910== 
+==3910== LEAK SUMMARY:
+==3910==    definitely lost: 520 bytes in 13 blocks
+==3910==    indirectly lost: 0 bytes in 0 blocks
+==3910==      possibly lost: 0 bytes in 0 blocks
+==3910==    still reachable: 1 bytes in 1 blocks
+==3910==         suppressed: 0 bytes in 0 blocks
+==3910== 
+==3910== For counts of detected and suppressed errors, rerun with: -v
+==3910== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3911== Memcheck, a memory error detector
+==3911== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3911== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3911== Command: ./print_tokens2.exe
+==3911== 
+==3911== 
+==3911== HEAP SUMMARY:
+==3911==     in use at exit: 601 bytes in 16 blocks
+==3911==   total heap usage: 104 allocs, 88 frees, 2,713 bytes allocated
+==3911== 
+==3911== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3911==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3911==    by 0x804863E: main (print_tokens2.c:68)
+==3911== 
+==3911== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3911==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3911==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3911==    by 0x80486C9: main (print_tokens2.c:81)
+==3911== 
+==3911== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3911==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3911==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3911==    by 0x80486F5: main (print_tokens2.c:84)
+==3911== 
+==3911== 520 bytes in 13 blocks are definitely lost in loss record 4 of 4
+==3911==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3911==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3911==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3911==    by 0x80486B7: main (print_tokens2.c:78)
+==3911== 
+==3911== LEAK SUMMARY:
+==3911==    definitely lost: 600 bytes in 15 blocks
+==3911==    indirectly lost: 0 bytes in 0 blocks
+==3911==      possibly lost: 0 bytes in 0 blocks
+==3911==    still reachable: 1 bytes in 1 blocks
+==3911==         suppressed: 0 bytes in 0 blocks
+==3911== 
+==3911== For counts of detected and suppressed errors, rerun with: -v
+==3911== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3912== Memcheck, a memory error detector
+==3912== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3912== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3912== Command: ./print_tokens2.exe
+==3912== 
+==3912== 
+==3912== HEAP SUMMARY:
+==3912==     in use at exit: 121 bytes in 4 blocks
+==3912==   total heap usage: 44 allocs, 40 frees, 1,081 bytes allocated
+==3912== 
+==3912== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3912==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3912==    by 0x804863E: main (print_tokens2.c:68)
+==3912== 
+==3912== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3912==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3912==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3912==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3912==    by 0x80486B7: main (print_tokens2.c:78)
+==3912== 
+==3912== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3912==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3912==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3912==    by 0x80486C9: main (print_tokens2.c:81)
+==3912== 
+==3912== 40 bytes in 1 blocks are definitely lost in loss record 4 of 4
+==3912==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3912==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3912==    by 0x80486F5: main (print_tokens2.c:84)
+==3912== 
+==3912== LEAK SUMMARY:
+==3912==    definitely lost: 120 bytes in 3 blocks
+==3912==    indirectly lost: 0 bytes in 0 blocks
+==3912==      possibly lost: 0 bytes in 0 blocks
+==3912==    still reachable: 1 bytes in 1 blocks
+==3912==         suppressed: 0 bytes in 0 blocks
+==3912== 
+==3912== For counts of detected and suppressed errors, rerun with: -v
+==3912== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3914== Memcheck, a memory error detector
+==3914== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3914== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3914== Command: ./print_tokens2.exe
+==3914== 
+==3914== 
+==3914== HEAP SUMMARY:
+==3914==     in use at exit: 361 bytes in 10 blocks
+==3914==   total heap usage: 74 allocs, 64 frees, 1,897 bytes allocated
+==3914== 
+==3914== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3914==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3914==    by 0x804863E: main (print_tokens2.c:68)
+==3914== 
+==3914== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3914==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3914==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3914==    by 0x80486C9: main (print_tokens2.c:81)
+==3914== 
+==3914== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3914==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3914==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3914==    by 0x80486F5: main (print_tokens2.c:84)
+==3914== 
+==3914== 280 bytes in 7 blocks are definitely lost in loss record 4 of 4
+==3914==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3914==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3914==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3914==    by 0x80486B7: main (print_tokens2.c:78)
+==3914== 
+==3914== LEAK SUMMARY:
+==3914==    definitely lost: 360 bytes in 9 blocks
+==3914==    indirectly lost: 0 bytes in 0 blocks
+==3914==      possibly lost: 0 bytes in 0 blocks
+==3914==    still reachable: 1 bytes in 1 blocks
+==3914==         suppressed: 0 bytes in 0 blocks
+==3914== 
+==3914== For counts of detected and suppressed errors, rerun with: -v
+==3914== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3915== Memcheck, a memory error detector
+==3915== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3915== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3915== Command: ./print_tokens2.exe
+==3915== 
+==3915== 
+==3915== HEAP SUMMARY:
+==3915==     in use at exit: 401 bytes in 11 blocks
+==3915==   total heap usage: 79 allocs, 68 frees, 2,033 bytes allocated
+==3915== 
+==3915== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3915==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3915==    by 0x804863E: main (print_tokens2.c:68)
+==3915== 
+==3915== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3915==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3915==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3915==    by 0x80486C9: main (print_tokens2.c:81)
+==3915== 
+==3915== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3915==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3915==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3915==    by 0x80486F5: main (print_tokens2.c:84)
+==3915== 
+==3915== 320 bytes in 8 blocks are definitely lost in loss record 4 of 4
+==3915==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3915==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3915==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3915==    by 0x80486B7: main (print_tokens2.c:78)
+==3915== 
+==3915== LEAK SUMMARY:
+==3915==    definitely lost: 400 bytes in 10 blocks
+==3915==    indirectly lost: 0 bytes in 0 blocks
+==3915==      possibly lost: 0 bytes in 0 blocks
+==3915==    still reachable: 1 bytes in 1 blocks
+==3915==         suppressed: 0 bytes in 0 blocks
+==3915== 
+==3915== For counts of detected and suppressed errors, rerun with: -v
+==3915== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3916== Memcheck, a memory error detector
+==3916== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3916== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3916== Command: ./print_tokens2.exe
+==3916== 
+==3916== 
+==3916== HEAP SUMMARY:
+==3916==     in use at exit: 161 bytes in 5 blocks
+==3916==   total heap usage: 47 allocs, 42 frees, 1,169 bytes allocated
+==3916== 
+==3916== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3916==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3916==    by 0x804863E: main (print_tokens2.c:68)
+==3916== 
+==3916== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3916==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3916==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3916==    by 0x80486C9: main (print_tokens2.c:81)
+==3916== 
+==3916== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3916==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3916==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3916==    by 0x80486F5: main (print_tokens2.c:84)
+==3916== 
+==3916== 80 bytes in 2 blocks are definitely lost in loss record 4 of 4
+==3916==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3916==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3916==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3916==    by 0x80486B7: main (print_tokens2.c:78)
+==3916== 
+==3916== LEAK SUMMARY:
+==3916==    definitely lost: 160 bytes in 4 blocks
+==3916==    indirectly lost: 0 bytes in 0 blocks
+==3916==      possibly lost: 0 bytes in 0 blocks
+==3916==    still reachable: 1 bytes in 1 blocks
+==3916==         suppressed: 0 bytes in 0 blocks
+==3916== 
+==3916== For counts of detected and suppressed errors, rerun with: -v
+==3916== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3917== Memcheck, a memory error detector
+==3917== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3917== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3917== Command: ./print_tokens2.exe
+==3917== 
+==3917== 
+==3917== HEAP SUMMARY:
+==3917==     in use at exit: 601 bytes in 16 blocks
+==3917==   total heap usage: 116 allocs, 100 frees, 3,001 bytes allocated
+==3917== 
+==3917== 1 bytes in 1 blocks are still reachable in loss record 1 of 5
+==3917==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3917==    by 0x804863E: main (print_tokens2.c:68)
+==3917== 
+==3917== 40 bytes in 1 blocks are definitely lost in loss record 2 of 5
+==3917==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3917==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3917==    by 0x80486F5: main (print_tokens2.c:84)
+==3917== 
+==3917== 120 bytes in 3 blocks are definitely lost in loss record 3 of 5
+==3917==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3917==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3917==    by 0x80486C9: main (print_tokens2.c:81)
+==3917== 
+==3917== 200 bytes in 5 blocks are definitely lost in loss record 4 of 5
+==3917==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3917==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3917==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3917==    by 0x80486B7: main (print_tokens2.c:78)
+==3917== 
+==3917== 240 bytes in 6 blocks are definitely lost in loss record 5 of 5
+==3917==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3917==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3917==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3917==    by 0x80486D5: main (print_tokens2.c:82)
+==3917== 
+==3917== LEAK SUMMARY:
+==3917==    definitely lost: 600 bytes in 15 blocks
+==3917==    indirectly lost: 0 bytes in 0 blocks
+==3917==      possibly lost: 0 bytes in 0 blocks
+==3917==    still reachable: 1 bytes in 1 blocks
+==3917==         suppressed: 0 bytes in 0 blocks
+==3917== 
+==3917== For counts of detected and suppressed errors, rerun with: -v
+==3917== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)
+==3919== Memcheck, a memory error detector
+==3919== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3919== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3919== Command: ./print_tokens2.exe
+==3919== 
+==3919== 
+==3919== HEAP SUMMARY:
+==3919==     in use at exit: 361 bytes in 10 blocks
+==3919==   total heap usage: 74 allocs, 64 frees, 1,897 bytes allocated
+==3919== 
+==3919== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3919==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3919==    by 0x804863E: main (print_tokens2.c:68)
+==3919== 
+==3919== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3919==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3919==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3919==    by 0x80486C9: main (print_tokens2.c:81)
+==3919== 
+==3919== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3919==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3919==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3919==    by 0x80486F5: main (print_tokens2.c:84)
+==3919== 
+==3919== 280 bytes in 7 blocks are definitely lost in loss record 4 of 4
+==3919==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3919==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3919==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3919==    by 0x80486B7: main (print_tokens2.c:78)
+==3919== 
+==3919== LEAK SUMMARY:
+==3919==    definitely lost: 360 bytes in 9 blocks
+==3919==    indirectly lost: 0 bytes in 0 blocks
+==3919==      possibly lost: 0 bytes in 0 blocks
+==3919==    still reachable: 1 bytes in 1 blocks
+==3919==         suppressed: 0 bytes in 0 blocks
+==3919== 
+==3919== For counts of detected and suppressed errors, rerun with: -v
+==3919== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3920== Memcheck, a memory error detector
+==3920== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3920== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3920== Command: ./print_tokens2.exe
+==3920== 
+==3920== 
+==3920== HEAP SUMMARY:
+==3920==     in use at exit: 361 bytes in 10 blocks
+==3920==   total heap usage: 82 allocs, 72 frees, 2,089 bytes allocated
+==3920== 
+==3920== 1 bytes in 1 blocks are still reachable in loss record 1 of 5
+==3920==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3920==    by 0x804863E: main (print_tokens2.c:68)
+==3920== 
+==3920== 40 bytes in 1 blocks are definitely lost in loss record 2 of 5
+==3920==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3920==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3920==    by 0x80486F5: main (print_tokens2.c:84)
+==3920== 
+==3920== 80 bytes in 2 blocks are definitely lost in loss record 3 of 5
+==3920==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3920==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3920==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3920==    by 0x80486B7: main (print_tokens2.c:78)
+==3920== 
+==3920== 80 bytes in 2 blocks are definitely lost in loss record 4 of 5
+==3920==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3920==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3920==    by 0x80486C9: main (print_tokens2.c:81)
+==3920== 
+==3920== 160 bytes in 4 blocks are definitely lost in loss record 5 of 5
+==3920==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3920==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3920==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3920==    by 0x80486D5: main (print_tokens2.c:82)
+==3920== 
+==3920== LEAK SUMMARY:
+==3920==    definitely lost: 360 bytes in 9 blocks
+==3920==    indirectly lost: 0 bytes in 0 blocks
+==3920==      possibly lost: 0 bytes in 0 blocks
+==3920==    still reachable: 1 bytes in 1 blocks
+==3920==         suppressed: 0 bytes in 0 blocks
+==3920== 
+==3920== For counts of detected and suppressed errors, rerun with: -v
+==3920== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)
+==3922== Memcheck, a memory error detector
+==3922== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3922== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3922== Command: ./print_tokens2.exe
+==3922== 
+==3922== 
+==3922== HEAP SUMMARY:
+==3922==     in use at exit: 241 bytes in 7 blocks
+==3922==   total heap usage: 59 allocs, 52 frees, 1,489 bytes allocated
+==3922== 
+==3922== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3922==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3922==    by 0x804863E: main (print_tokens2.c:68)
+==3922== 
+==3922== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3922==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3922==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3922==    by 0x80486C9: main (print_tokens2.c:81)
+==3922== 
+==3922== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3922==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3922==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3922==    by 0x80486F5: main (print_tokens2.c:84)
+==3922== 
+==3922== 160 bytes in 4 blocks are definitely lost in loss record 4 of 4
+==3922==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3922==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3922==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3922==    by 0x80486B7: main (print_tokens2.c:78)
+==3922== 
+==3922== LEAK SUMMARY:
+==3922==    definitely lost: 240 bytes in 6 blocks
+==3922==    indirectly lost: 0 bytes in 0 blocks
+==3922==      possibly lost: 0 bytes in 0 blocks
+==3922==    still reachable: 1 bytes in 1 blocks
+==3922==         suppressed: 0 bytes in 0 blocks
+==3922== 
+==3922== For counts of detected and suppressed errors, rerun with: -v
+==3922== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3924== Memcheck, a memory error detector
+==3924== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3924== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3924== Command: ./print_tokens2.exe
+==3924== 
+==3924== 
+==3924== HEAP SUMMARY:
+==3924==     in use at exit: 241 bytes in 7 blocks
+==3924==   total heap usage: 59 allocs, 52 frees, 1,489 bytes allocated
+==3924== 
+==3924== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3924==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3924==    by 0x804863E: main (print_tokens2.c:68)
+==3924== 
+==3924== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3924==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3924==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3924==    by 0x80486C9: main (print_tokens2.c:81)
+==3924== 
+==3924== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3924==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3924==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3924==    by 0x80486F5: main (print_tokens2.c:84)
+==3924== 
+==3924== 160 bytes in 4 blocks are definitely lost in loss record 4 of 4
+==3924==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3924==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3924==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3924==    by 0x80486B7: main (print_tokens2.c:78)
+==3924== 
+==3924== LEAK SUMMARY:
+==3924==    definitely lost: 240 bytes in 6 blocks
+==3924==    indirectly lost: 0 bytes in 0 blocks
+==3924==      possibly lost: 0 bytes in 0 blocks
+==3924==    still reachable: 1 bytes in 1 blocks
+==3924==         suppressed: 0 bytes in 0 blocks
+==3924== 
+==3924== For counts of detected and suppressed errors, rerun with: -v
+==3924== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3925== Memcheck, a memory error detector
+==3925== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3925== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3925== Command: ./print_tokens2.exe
+==3925== 
+==3925== 
+==3925== HEAP SUMMARY:
+==3925==     in use at exit: 561 bytes in 15 blocks
+==3925==   total heap usage: 99 allocs, 84 frees, 2,577 bytes allocated
+==3925== 
+==3925== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3925==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3925==    by 0x804863E: main (print_tokens2.c:68)
+==3925== 
+==3925== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3925==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3925==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3925==    by 0x80486C9: main (print_tokens2.c:81)
+==3925== 
+==3925== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3925==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3925==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3925==    by 0x80486F5: main (print_tokens2.c:84)
+==3925== 
+==3925== 480 bytes in 12 blocks are definitely lost in loss record 4 of 4
+==3925==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3925==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3925==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3925==    by 0x80486B7: main (print_tokens2.c:78)
+==3925== 
+==3925== LEAK SUMMARY:
+==3925==    definitely lost: 560 bytes in 14 blocks
+==3925==    indirectly lost: 0 bytes in 0 blocks
+==3925==      possibly lost: 0 bytes in 0 blocks
+==3925==    still reachable: 1 bytes in 1 blocks
+==3925==         suppressed: 0 bytes in 0 blocks
+==3925== 
+==3925== For counts of detected and suppressed errors, rerun with: -v
+==3925== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3926== Memcheck, a memory error detector
+==3926== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3926== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3926== Command: ./print_tokens2.exe
+==3926== 
+==3926== 
+==3926== HEAP SUMMARY:
+==3926==     in use at exit: 281 bytes in 8 blocks
+==3926==   total heap usage: 64 allocs, 56 frees, 1,625 bytes allocated
+==3926== 
+==3926== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3926==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3926==    by 0x804863E: main (print_tokens2.c:68)
+==3926== 
+==3926== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3926==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3926==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3926==    by 0x80486C9: main (print_tokens2.c:81)
+==3926== 
+==3926== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3926==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3926==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3926==    by 0x80486F5: main (print_tokens2.c:84)
+==3926== 
+==3926== 200 bytes in 5 blocks are definitely lost in loss record 4 of 4
+==3926==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3926==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3926==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3926==    by 0x80486B7: main (print_tokens2.c:78)
+==3926== 
+==3926== LEAK SUMMARY:
+==3926==    definitely lost: 280 bytes in 7 blocks
+==3926==    indirectly lost: 0 bytes in 0 blocks
+==3926==      possibly lost: 0 bytes in 0 blocks
+==3926==    still reachable: 1 bytes in 1 blocks
+==3926==         suppressed: 0 bytes in 0 blocks
+==3926== 
+==3926== For counts of detected and suppressed errors, rerun with: -v
+==3926== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3927== Memcheck, a memory error detector
+==3927== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3927== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3927== Command: ./print_tokens2.exe
+==3927== 
+==3927== 
+==3927== HEAP SUMMARY:
+==3927==     in use at exit: 121 bytes in 4 blocks
+==3927==   total heap usage: 44 allocs, 40 frees, 1,081 bytes allocated
+==3927== 
+==3927== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3927==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3927==    by 0x804863E: main (print_tokens2.c:68)
+==3927== 
+==3927== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3927==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3927==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3927==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3927==    by 0x80486B7: main (print_tokens2.c:78)
+==3927== 
+==3927== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3927==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3927==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3927==    by 0x80486C9: main (print_tokens2.c:81)
+==3927== 
+==3927== 40 bytes in 1 blocks are definitely lost in loss record 4 of 4
+==3927==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3927==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3927==    by 0x80486F5: main (print_tokens2.c:84)
+==3927== 
+==3927== LEAK SUMMARY:
+==3927==    definitely lost: 120 bytes in 3 blocks
+==3927==    indirectly lost: 0 bytes in 0 blocks
+==3927==      possibly lost: 0 bytes in 0 blocks
+==3927==    still reachable: 1 bytes in 1 blocks
+==3927==         suppressed: 0 bytes in 0 blocks
+==3927== 
+==3927== For counts of detected and suppressed errors, rerun with: -v
+==3927== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3929== Memcheck, a memory error detector
+==3929== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3929== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3929== Command: ./print_tokens2.exe
+==3929== 
+==3929== 
+==3929== HEAP SUMMARY:
+==3929==     in use at exit: 321 bytes in 9 blocks
+==3929==   total heap usage: 69 allocs, 60 frees, 1,761 bytes allocated
+==3929== 
+==3929== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3929==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3929==    by 0x804863E: main (print_tokens2.c:68)
+==3929== 
+==3929== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3929==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3929==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3929==    by 0x80486C9: main (print_tokens2.c:81)
+==3929== 
+==3929== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3929==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3929==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3929==    by 0x80486F5: main (print_tokens2.c:84)
+==3929== 
+==3929== 240 bytes in 6 blocks are definitely lost in loss record 4 of 4
+==3929==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3929==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3929==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3929==    by 0x80486B7: main (print_tokens2.c:78)
+==3929== 
+==3929== LEAK SUMMARY:
+==3929==    definitely lost: 320 bytes in 8 blocks
+==3929==    indirectly lost: 0 bytes in 0 blocks
+==3929==      possibly lost: 0 bytes in 0 blocks
+==3929==    still reachable: 1 bytes in 1 blocks
+==3929==         suppressed: 0 bytes in 0 blocks
+==3929== 
+==3929== For counts of detected and suppressed errors, rerun with: -v
+==3929== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3930== Memcheck, a memory error detector
+==3930== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3930== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3930== Command: ./print_tokens2.exe
+==3930== 
+==3930== 
+==3930== HEAP SUMMARY:
+==3930==     in use at exit: 121 bytes in 4 blocks
+==3930==   total heap usage: 44 allocs, 40 frees, 1,081 bytes allocated
+==3930== 
+==3930== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3930==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3930==    by 0x804863E: main (print_tokens2.c:68)
+==3930== 
+==3930== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3930==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3930==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3930==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3930==    by 0x80486B7: main (print_tokens2.c:78)
+==3930== 
+==3930== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3930==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3930==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3930==    by 0x80486C9: main (print_tokens2.c:81)
+==3930== 
+==3930== 40 bytes in 1 blocks are definitely lost in loss record 4 of 4
+==3930==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3930==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3930==    by 0x80486F5: main (print_tokens2.c:84)
+==3930== 
+==3930== LEAK SUMMARY:
+==3930==    definitely lost: 120 bytes in 3 blocks
+==3930==    indirectly lost: 0 bytes in 0 blocks
+==3930==      possibly lost: 0 bytes in 0 blocks
+==3930==    still reachable: 1 bytes in 1 blocks
+==3930==         suppressed: 0 bytes in 0 blocks
+==3930== 
+==3930== For counts of detected and suppressed errors, rerun with: -v
+==3930== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3931== Memcheck, a memory error detector
+==3931== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3931== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3931== Command: ./print_tokens2.exe
+==3931== 
+==3931== 
+==3931== HEAP SUMMARY:
+==3931==     in use at exit: 161 bytes in 5 blocks
+==3931==   total heap usage: 51 allocs, 46 frees, 1,265 bytes allocated
+==3931== 
+==3931== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3931==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3931==    by 0x804863E: main (print_tokens2.c:68)
+==3931== 
+==3931== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3931==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3931==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3931==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3931==    by 0x80486B7: main (print_tokens2.c:78)
+==3931== 
+==3931== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3931==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3931==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3931==    by 0x80486F5: main (print_tokens2.c:84)
+==3931== 
+==3931== 80 bytes in 2 blocks are definitely lost in loss record 4 of 4
+==3931==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3931==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3931==    by 0x80486C9: main (print_tokens2.c:81)
+==3931== 
+==3931== LEAK SUMMARY:
+==3931==    definitely lost: 160 bytes in 4 blocks
+==3931==    indirectly lost: 0 bytes in 0 blocks
+==3931==      possibly lost: 0 bytes in 0 blocks
+==3931==    still reachable: 1 bytes in 1 blocks
+==3931==         suppressed: 0 bytes in 0 blocks
+==3931== 
+==3931== For counts of detected and suppressed errors, rerun with: -v
+==3931== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3932== Memcheck, a memory error detector
+==3932== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3932== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3932== Command: ./print_tokens2.exe
+==3932== 
+==3932== 
+==3932== HEAP SUMMARY:
+==3932==     in use at exit: 401 bytes in 11 blocks
+==3932==   total heap usage: 83 allocs, 72 frees, 2,129 bytes allocated
+==3932== 
+==3932== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3932==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3932==    by 0x804863E: main (print_tokens2.c:68)
+==3932== 
+==3932== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3932==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3932==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3932==    by 0x80486F5: main (print_tokens2.c:84)
+==3932== 
+==3932== 80 bytes in 2 blocks are definitely lost in loss record 3 of 4
+==3932==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3932==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3932==    by 0x80486C9: main (print_tokens2.c:81)
+==3932== 
+==3932== 280 bytes in 7 blocks are definitely lost in loss record 4 of 4
+==3932==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3932==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3932==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3932==    by 0x80486B7: main (print_tokens2.c:78)
+==3932== 
+==3932== LEAK SUMMARY:
+==3932==    definitely lost: 400 bytes in 10 blocks
+==3932==    indirectly lost: 0 bytes in 0 blocks
+==3932==      possibly lost: 0 bytes in 0 blocks
+==3932==    still reachable: 1 bytes in 1 blocks
+==3932==         suppressed: 0 bytes in 0 blocks
+==3932== 
+==3932== For counts of detected and suppressed errors, rerun with: -v
+==3932== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3934== Memcheck, a memory error detector
+==3934== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3934== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3934== Command: ./print_tokens2.exe
+==3934== 
+==3934== 
+==3934== HEAP SUMMARY:
+==3934==     in use at exit: 601 bytes in 16 blocks
+==3934==   total heap usage: 104 allocs, 88 frees, 2,713 bytes allocated
+==3934== 
+==3934== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3934==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3934==    by 0x804863E: main (print_tokens2.c:68)
+==3934== 
+==3934== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3934==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3934==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3934==    by 0x80486C9: main (print_tokens2.c:81)
+==3934== 
+==3934== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3934==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3934==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3934==    by 0x80486F5: main (print_tokens2.c:84)
+==3934== 
+==3934== 520 bytes in 13 blocks are definitely lost in loss record 4 of 4
+==3934==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3934==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3934==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3934==    by 0x80486B7: main (print_tokens2.c:78)
+==3934== 
+==3934== LEAK SUMMARY:
+==3934==    definitely lost: 600 bytes in 15 blocks
+==3934==    indirectly lost: 0 bytes in 0 blocks
+==3934==      possibly lost: 0 bytes in 0 blocks
+==3934==    still reachable: 1 bytes in 1 blocks
+==3934==         suppressed: 0 bytes in 0 blocks
+==3934== 
+==3934== For counts of detected and suppressed errors, rerun with: -v
+==3934== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3936== Memcheck, a memory error detector
+==3936== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3936== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3936== Command: ./print_tokens2.exe
+==3936== 
+==3936== 
+==3936== HEAP SUMMARY:
+==3936==     in use at exit: 201 bytes in 6 blocks
+==3936==   total heap usage: 58 allocs, 52 frees, 1,449 bytes allocated
+==3936== 
+==3936== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3936==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3936==    by 0x804863E: main (print_tokens2.c:68)
+==3936== 
+==3936== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3936==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3936==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3936==    by 0x80486F5: main (print_tokens2.c:84)
+==3936== 
+==3936== 80 bytes in 2 blocks are definitely lost in loss record 3 of 4
+==3936==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3936==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3936==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3936==    by 0x80486B7: main (print_tokens2.c:78)
+==3936== 
+==3936== 80 bytes in 2 blocks are definitely lost in loss record 4 of 4
+==3936==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3936==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3936==    by 0x80486C9: main (print_tokens2.c:81)
+==3936== 
+==3936== LEAK SUMMARY:
+==3936==    definitely lost: 200 bytes in 5 blocks
+==3936==    indirectly lost: 0 bytes in 0 blocks
+==3936==      possibly lost: 0 bytes in 0 blocks
+==3936==    still reachable: 1 bytes in 1 blocks
+==3936==         suppressed: 0 bytes in 0 blocks
+==3936== 
+==3936== For counts of detected and suppressed errors, rerun with: -v
+==3936== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3937== Memcheck, a memory error detector
+==3937== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3937== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3937== Command: ./print_tokens2.exe
+==3937== 
+==3937== 
+==3937== HEAP SUMMARY:
+==3937==     in use at exit: 201 bytes in 6 blocks
+==3937==   total heap usage: 58 allocs, 52 frees, 1,449 bytes allocated
+==3937== 
+==3937== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3937==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3937==    by 0x804863E: main (print_tokens2.c:68)
+==3937== 
+==3937== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3937==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3937==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3937==    by 0x80486F5: main (print_tokens2.c:84)
+==3937== 
+==3937== 80 bytes in 2 blocks are definitely lost in loss record 3 of 4
+==3937==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3937==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3937==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3937==    by 0x80486B7: main (print_tokens2.c:78)
+==3937== 
+==3937== 80 bytes in 2 blocks are definitely lost in loss record 4 of 4
+==3937==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3937==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3937==    by 0x80486C9: main (print_tokens2.c:81)
+==3937== 
+==3937== LEAK SUMMARY:
+==3937==    definitely lost: 200 bytes in 5 blocks
+==3937==    indirectly lost: 0 bytes in 0 blocks
+==3937==      possibly lost: 0 bytes in 0 blocks
+==3937==    still reachable: 1 bytes in 1 blocks
+==3937==         suppressed: 0 bytes in 0 blocks
+==3937== 
+==3937== For counts of detected and suppressed errors, rerun with: -v
+==3937== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3938== Memcheck, a memory error detector
+==3938== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3938== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3938== Command: ./print_tokens2.exe
+==3938== 
+==3938== 
+==3938== HEAP SUMMARY:
+==3938==     in use at exit: 281 bytes in 8 blocks
+==3938==   total heap usage: 68 allocs, 60 frees, 1,721 bytes allocated
+==3938== 
+==3938== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3938==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3938==    by 0x804863E: main (print_tokens2.c:68)
+==3938== 
+==3938== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3938==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3938==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3938==    by 0x80486F5: main (print_tokens2.c:84)
+==3938== 
+==3938== 80 bytes in 2 blocks are definitely lost in loss record 3 of 4
+==3938==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3938==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3938==    by 0x80486C9: main (print_tokens2.c:81)
+==3938== 
+==3938== 160 bytes in 4 blocks are definitely lost in loss record 4 of 4
+==3938==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3938==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3938==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3938==    by 0x80486B7: main (print_tokens2.c:78)
+==3938== 
+==3938== LEAK SUMMARY:
+==3938==    definitely lost: 280 bytes in 7 blocks
+==3938==    indirectly lost: 0 bytes in 0 blocks
+==3938==      possibly lost: 0 bytes in 0 blocks
+==3938==    still reachable: 1 bytes in 1 blocks
+==3938==         suppressed: 0 bytes in 0 blocks
+==3938== 
+==3938== For counts of detected and suppressed errors, rerun with: -v
+==3938== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3940== Memcheck, a memory error detector
+==3940== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3940== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3940== Command: ./print_tokens2.exe
+==3940== 
+==3940== 
+==3940== HEAP SUMMARY:
+==3940==     in use at exit: 161 bytes in 5 blocks
+==3940==   total heap usage: 47 allocs, 42 frees, 1,169 bytes allocated
+==3940== 
+==3940== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3940==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3940==    by 0x804863E: main (print_tokens2.c:68)
+==3940== 
+==3940== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3940==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3940==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3940==    by 0x80486C9: main (print_tokens2.c:81)
+==3940== 
+==3940== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3940==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3940==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3940==    by 0x80486F5: main (print_tokens2.c:84)
+==3940== 
+==3940== 80 bytes in 2 blocks are definitely lost in loss record 4 of 4
+==3940==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3940==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3940==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3940==    by 0x80486B7: main (print_tokens2.c:78)
+==3940== 
+==3940== LEAK SUMMARY:
+==3940==    definitely lost: 160 bytes in 4 blocks
+==3940==    indirectly lost: 0 bytes in 0 blocks
+==3940==      possibly lost: 0 bytes in 0 blocks
+==3940==    still reachable: 1 bytes in 1 blocks
+==3940==         suppressed: 0 bytes in 0 blocks
+==3940== 
+==3940== For counts of detected and suppressed errors, rerun with: -v
+==3940== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3941== Memcheck, a memory error detector
+==3941== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3941== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3941== Command: ./print_tokens2.exe
+==3941== 
+==3941== 
+==3941== HEAP SUMMARY:
+==3941==     in use at exit: 161 bytes in 5 blocks
+==3941==   total heap usage: 49 allocs, 44 frees, 1,217 bytes allocated
+==3941== 
+==3941== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3941==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3941==    by 0x804863E: main (print_tokens2.c:68)
+==3941== 
+==3941== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3941==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3941==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3941==    by 0x80486C9: main (print_tokens2.c:81)
+==3941== 
+==3941== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3941==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3941==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3941==    by 0x80486F5: main (print_tokens2.c:84)
+==3941== 
+==3941== 80 bytes in 2 blocks are definitely lost in loss record 4 of 4
+==3941==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3941==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3941==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3941==    by 0x80486B7: main (print_tokens2.c:78)
+==3941== 
+==3941== LEAK SUMMARY:
+==3941==    definitely lost: 160 bytes in 4 blocks
+==3941==    indirectly lost: 0 bytes in 0 blocks
+==3941==      possibly lost: 0 bytes in 0 blocks
+==3941==    still reachable: 1 bytes in 1 blocks
+==3941==         suppressed: 0 bytes in 0 blocks
+==3941== 
+==3941== For counts of detected and suppressed errors, rerun with: -v
+==3941== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3942== Memcheck, a memory error detector
+==3942== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3942== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3942== Command: ./print_tokens2.exe
+==3942== 
+==3942== 
+==3942== HEAP SUMMARY:
+==3942==     in use at exit: 481 bytes in 13 blocks
+==3942==   total heap usage: 89 allocs, 76 frees, 2,305 bytes allocated
+==3942== 
+==3942== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3942==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3942==    by 0x804863E: main (print_tokens2.c:68)
+==3942== 
+==3942== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3942==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3942==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3942==    by 0x80486C9: main (print_tokens2.c:81)
+==3942== 
+==3942== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3942==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3942==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3942==    by 0x80486F5: main (print_tokens2.c:84)
+==3942== 
+==3942== 400 bytes in 10 blocks are definitely lost in loss record 4 of 4
+==3942==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3942==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3942==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3942==    by 0x80486B7: main (print_tokens2.c:78)
+==3942== 
+==3942== LEAK SUMMARY:
+==3942==    definitely lost: 480 bytes in 12 blocks
+==3942==    indirectly lost: 0 bytes in 0 blocks
+==3942==      possibly lost: 0 bytes in 0 blocks
+==3942==    still reachable: 1 bytes in 1 blocks
+==3942==         suppressed: 0 bytes in 0 blocks
+==3942== 
+==3942== For counts of detected and suppressed errors, rerun with: -v
+==3942== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3944== Memcheck, a memory error detector
+==3944== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3944== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3944== Command: ./print_tokens2.exe
+==3944== 
+==3944== 
+==3944== HEAP SUMMARY:
+==3944==     in use at exit: 121 bytes in 4 blocks
+==3944==   total heap usage: 44 allocs, 40 frees, 1,081 bytes allocated
+==3944== 
+==3944== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3944==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3944==    by 0x804863E: main (print_tokens2.c:68)
+==3944== 
+==3944== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3944==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3944==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3944==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3944==    by 0x80486B7: main (print_tokens2.c:78)
+==3944== 
+==3944== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3944==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3944==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3944==    by 0x80486C9: main (print_tokens2.c:81)
+==3944== 
+==3944== 40 bytes in 1 blocks are definitely lost in loss record 4 of 4
+==3944==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3944==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3944==    by 0x80486F5: main (print_tokens2.c:84)
+==3944== 
+==3944== LEAK SUMMARY:
+==3944==    definitely lost: 120 bytes in 3 blocks
+==3944==    indirectly lost: 0 bytes in 0 blocks
+==3944==      possibly lost: 0 bytes in 0 blocks
+==3944==    still reachable: 1 bytes in 1 blocks
+==3944==         suppressed: 0 bytes in 0 blocks
+==3944== 
+==3944== For counts of detected and suppressed errors, rerun with: -v
+==3944== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3945== Memcheck, a memory error detector
+==3945== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3945== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3945== Command: ./print_tokens2.exe
+==3945== 
+==3945== 
+==3945== HEAP SUMMARY:
+==3945==     in use at exit: 321 bytes in 9 blocks
+==3945==   total heap usage: 73 allocs, 64 frees, 1,857 bytes allocated
+==3945== 
+==3945== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3945==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3945==    by 0x804863E: main (print_tokens2.c:68)
+==3945== 
+==3945== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3945==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3945==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3945==    by 0x80486F5: main (print_tokens2.c:84)
+==3945== 
+==3945== 80 bytes in 2 blocks are definitely lost in loss record 3 of 4
+==3945==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3945==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3945==    by 0x80486C9: main (print_tokens2.c:81)
+==3945== 
+==3945== 200 bytes in 5 blocks are definitely lost in loss record 4 of 4
+==3945==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3945==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3945==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3945==    by 0x80486B7: main (print_tokens2.c:78)
+==3945== 
+==3945== LEAK SUMMARY:
+==3945==    definitely lost: 320 bytes in 8 blocks
+==3945==    indirectly lost: 0 bytes in 0 blocks
+==3945==      possibly lost: 0 bytes in 0 blocks
+==3945==    still reachable: 1 bytes in 1 blocks
+==3945==         suppressed: 0 bytes in 0 blocks
+==3945== 
+==3945== For counts of detected and suppressed errors, rerun with: -v
+==3945== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3946== Memcheck, a memory error detector
+==3946== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3946== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3946== Command: ./print_tokens2.exe
+==3946== 
+==3946== 
+==3946== HEAP SUMMARY:
+==3946==     in use at exit: 481 bytes in 13 blocks
+==3946==   total heap usage: 89 allocs, 76 frees, 2,305 bytes allocated
+==3946== 
+==3946== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3946==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3946==    by 0x804863E: main (print_tokens2.c:68)
+==3946== 
+==3946== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3946==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3946==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3946==    by 0x80486C9: main (print_tokens2.c:81)
+==3946== 
+==3946== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3946==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3946==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3946==    by 0x80486F5: main (print_tokens2.c:84)
+==3946== 
+==3946== 400 bytes in 10 blocks are definitely lost in loss record 4 of 4
+==3946==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3946==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3946==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3946==    by 0x80486B7: main (print_tokens2.c:78)
+==3946== 
+==3946== LEAK SUMMARY:
+==3946==    definitely lost: 480 bytes in 12 blocks
+==3946==    indirectly lost: 0 bytes in 0 blocks
+==3946==      possibly lost: 0 bytes in 0 blocks
+==3946==    still reachable: 1 bytes in 1 blocks
+==3946==         suppressed: 0 bytes in 0 blocks
+==3946== 
+==3946== For counts of detected and suppressed errors, rerun with: -v
+==3946== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3947== Memcheck, a memory error detector
+==3947== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3947== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3947== Command: ./print_tokens2.exe
+==3947== 
+==3947== 
+==3947== HEAP SUMMARY:
+==3947==     in use at exit: 161 bytes in 5 blocks
+==3947==   total heap usage: 55 allocs, 50 frees, 1,361 bytes allocated
+==3947== 
+==3947== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3947==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3947==    by 0x804863E: main (print_tokens2.c:68)
+==3947== 
+==3947== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3947==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3947==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3947==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3947==    by 0x80486B7: main (print_tokens2.c:78)
+==3947== 
+==3947== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3947==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3947==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3947==    by 0x80486F5: main (print_tokens2.c:84)
+==3947== 
+==3947== 80 bytes in 2 blocks are definitely lost in loss record 4 of 4
+==3947==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3947==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3947==    by 0x80486C9: main (print_tokens2.c:81)
+==3947== 
+==3947== LEAK SUMMARY:
+==3947==    definitely lost: 160 bytes in 4 blocks
+==3947==    indirectly lost: 0 bytes in 0 blocks
+==3947==      possibly lost: 0 bytes in 0 blocks
+==3947==    still reachable: 1 bytes in 1 blocks
+==3947==         suppressed: 0 bytes in 0 blocks
+==3947== 
+==3947== For counts of detected and suppressed errors, rerun with: -v
+==3947== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3949== Memcheck, a memory error detector
+==3949== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3949== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3949== Command: ./print_tokens2.exe
+==3949== 
+==3949== 
+==3949== HEAP SUMMARY:
+==3949==     in use at exit: 161 bytes in 5 blocks
+==3949==   total heap usage: 51 allocs, 46 frees, 1,265 bytes allocated
+==3949== 
+==3949== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3949==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3949==    by 0x804863E: main (print_tokens2.c:68)
+==3949== 
+==3949== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3949==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3949==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3949==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3949==    by 0x80486B7: main (print_tokens2.c:78)
+==3949== 
+==3949== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3949==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3949==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3949==    by 0x80486F5: main (print_tokens2.c:84)
+==3949== 
+==3949== 80 bytes in 2 blocks are definitely lost in loss record 4 of 4
+==3949==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3949==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3949==    by 0x80486C9: main (print_tokens2.c:81)
+==3949== 
+==3949== LEAK SUMMARY:
+==3949==    definitely lost: 160 bytes in 4 blocks
+==3949==    indirectly lost: 0 bytes in 0 blocks
+==3949==      possibly lost: 0 bytes in 0 blocks
+==3949==    still reachable: 1 bytes in 1 blocks
+==3949==         suppressed: 0 bytes in 0 blocks
+==3949== 
+==3949== For counts of detected and suppressed errors, rerun with: -v
+==3949== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3950== Memcheck, a memory error detector
+==3950== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3950== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3950== Command: ./print_tokens2.exe
+==3950== 
+==3950== 
+==3950== HEAP SUMMARY:
+==3950==     in use at exit: 521 bytes in 14 blocks
+==3950==   total heap usage: 104 allocs, 90 frees, 2,681 bytes allocated
+==3950== 
+==3950== 1 bytes in 1 blocks are still reachable in loss record 1 of 5
+==3950==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3950==    by 0x804863E: main (print_tokens2.c:68)
+==3950== 
+==3950== 40 bytes in 1 blocks are definitely lost in loss record 2 of 5
+==3950==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3950==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3950==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3950==    by 0x80486D5: main (print_tokens2.c:82)
+==3950== 
+==3950== 40 bytes in 1 blocks are definitely lost in loss record 3 of 5
+==3950==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3950==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3950==    by 0x80486F5: main (print_tokens2.c:84)
+==3950== 
+==3950== 80 bytes in 2 blocks are definitely lost in loss record 4 of 5
+==3950==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3950==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3950==    by 0x80486C9: main (print_tokens2.c:81)
+==3950== 
+==3950== 360 bytes in 9 blocks are definitely lost in loss record 5 of 5
+==3950==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3950==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3950==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3950==    by 0x80486B7: main (print_tokens2.c:78)
+==3950== 
+==3950== LEAK SUMMARY:
+==3950==    definitely lost: 520 bytes in 13 blocks
+==3950==    indirectly lost: 0 bytes in 0 blocks
+==3950==      possibly lost: 0 bytes in 0 blocks
+==3950==    still reachable: 1 bytes in 1 blocks
+==3950==         suppressed: 0 bytes in 0 blocks
+==3950== 
+==3950== For counts of detected and suppressed errors, rerun with: -v
+==3950== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)
+==3951== Memcheck, a memory error detector
+==3951== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3951== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3951== Command: ./print_tokens2.exe
+==3951== 
+==3951== 
+==3951== HEAP SUMMARY:
+==3951==     in use at exit: 321 bytes in 9 blocks
+==3951==   total heap usage: 67 allocs, 58 frees, 1,713 bytes allocated
+==3951== 
+==3951== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3951==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3951==    by 0x804863E: main (print_tokens2.c:68)
+==3951== 
+==3951== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3951==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3951==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3951==    by 0x80486C9: main (print_tokens2.c:81)
+==3951== 
+==3951== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3951==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3951==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3951==    by 0x80486F5: main (print_tokens2.c:84)
+==3951== 
+==3951== 240 bytes in 6 blocks are definitely lost in loss record 4 of 4
+==3951==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3951==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3951==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3951==    by 0x80486B7: main (print_tokens2.c:78)
+==3951== 
+==3951== LEAK SUMMARY:
+==3951==    definitely lost: 320 bytes in 8 blocks
+==3951==    indirectly lost: 0 bytes in 0 blocks
+==3951==      possibly lost: 0 bytes in 0 blocks
+==3951==    still reachable: 1 bytes in 1 blocks
+==3951==         suppressed: 0 bytes in 0 blocks
+==3951== 
+==3951== For counts of detected and suppressed errors, rerun with: -v
+==3951== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3952== Memcheck, a memory error detector
+==3952== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3952== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3952== Command: ./print_tokens2.exe
+==3952== 
+==3952== 
+==3952== HEAP SUMMARY:
+==3952==     in use at exit: 361 bytes in 10 blocks
+==3952==   total heap usage: 74 allocs, 64 frees, 1,897 bytes allocated
+==3952== 
+==3952== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3952==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3952==    by 0x804863E: main (print_tokens2.c:68)
+==3952== 
+==3952== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3952==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3952==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3952==    by 0x80486C9: main (print_tokens2.c:81)
+==3952== 
+==3952== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3952==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3952==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3952==    by 0x80486F5: main (print_tokens2.c:84)
+==3952== 
+==3952== 280 bytes in 7 blocks are definitely lost in loss record 4 of 4
+==3952==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3952==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3952==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3952==    by 0x80486B7: main (print_tokens2.c:78)
+==3952== 
+==3952== LEAK SUMMARY:
+==3952==    definitely lost: 360 bytes in 9 blocks
+==3952==    indirectly lost: 0 bytes in 0 blocks
+==3952==      possibly lost: 0 bytes in 0 blocks
+==3952==    still reachable: 1 bytes in 1 blocks
+==3952==         suppressed: 0 bytes in 0 blocks
+==3952== 
+==3952== For counts of detected and suppressed errors, rerun with: -v
+==3952== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3954== Memcheck, a memory error detector
+==3954== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3954== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3954== Command: ./print_tokens2.exe
+==3954== 
+==3954== 
+==3954== HEAP SUMMARY:
+==3954==     in use at exit: 161 bytes in 5 blocks
+==3954==   total heap usage: 47 allocs, 42 frees, 1,169 bytes allocated
+==3954== 
+==3954== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3954==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3954==    by 0x804863E: main (print_tokens2.c:68)
+==3954== 
+==3954== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3954==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3954==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3954==    by 0x80486C9: main (print_tokens2.c:81)
+==3954== 
+==3954== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3954==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3954==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3954==    by 0x80486F5: main (print_tokens2.c:84)
+==3954== 
+==3954== 80 bytes in 2 blocks are definitely lost in loss record 4 of 4
+==3954==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3954==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3954==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3954==    by 0x80486B7: main (print_tokens2.c:78)
+==3954== 
+==3954== LEAK SUMMARY:
+==3954==    definitely lost: 160 bytes in 4 blocks
+==3954==    indirectly lost: 0 bytes in 0 blocks
+==3954==      possibly lost: 0 bytes in 0 blocks
+==3954==    still reachable: 1 bytes in 1 blocks
+==3954==         suppressed: 0 bytes in 0 blocks
+==3954== 
+==3954== For counts of detected and suppressed errors, rerun with: -v
+==3954== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3955== Memcheck, a memory error detector
+==3955== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3955== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3955== Command: ./print_tokens2.exe
+==3955== 
+==3955== 
+==3955== HEAP SUMMARY:
+==3955==     in use at exit: 401 bytes in 11 blocks
+==3955==   total heap usage: 79 allocs, 68 frees, 2,033 bytes allocated
+==3955== 
+==3955== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3955==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3955==    by 0x804863E: main (print_tokens2.c:68)
+==3955== 
+==3955== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3955==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3955==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3955==    by 0x80486C9: main (print_tokens2.c:81)
+==3955== 
+==3955== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3955==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3955==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3955==    by 0x80486F5: main (print_tokens2.c:84)
+==3955== 
+==3955== 320 bytes in 8 blocks are definitely lost in loss record 4 of 4
+==3955==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3955==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3955==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3955==    by 0x80486B7: main (print_tokens2.c:78)
+==3955== 
+==3955== LEAK SUMMARY:
+==3955==    definitely lost: 400 bytes in 10 blocks
+==3955==    indirectly lost: 0 bytes in 0 blocks
+==3955==      possibly lost: 0 bytes in 0 blocks
+==3955==    still reachable: 1 bytes in 1 blocks
+==3955==         suppressed: 0 bytes in 0 blocks
+==3955== 
+==3955== For counts of detected and suppressed errors, rerun with: -v
+==3955== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3956== Memcheck, a memory error detector
+==3956== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3956== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3956== Command: ./print_tokens2.exe
+==3956== 
+==3956== 
+==3956== HEAP SUMMARY:
+==3956==     in use at exit: 681 bytes in 18 blocks
+==3956==   total heap usage: 114 allocs, 96 frees, 2,985 bytes allocated
+==3956== 
+==3956== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3956==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3956==    by 0x804863E: main (print_tokens2.c:68)
+==3956== 
+==3956== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3956==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3956==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3956==    by 0x80486C9: main (print_tokens2.c:81)
+==3956== 
+==3956== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3956==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3956==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3956==    by 0x80486F5: main (print_tokens2.c:84)
+==3956== 
+==3956== 600 bytes in 15 blocks are definitely lost in loss record 4 of 4
+==3956==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3956==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3956==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3956==    by 0x80486B7: main (print_tokens2.c:78)
+==3956== 
+==3956== LEAK SUMMARY:
+==3956==    definitely lost: 680 bytes in 17 blocks
+==3956==    indirectly lost: 0 bytes in 0 blocks
+==3956==      possibly lost: 0 bytes in 0 blocks
+==3956==    still reachable: 1 bytes in 1 blocks
+==3956==         suppressed: 0 bytes in 0 blocks
+==3956== 
+==3956== For counts of detected and suppressed errors, rerun with: -v
+==3956== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3958== Memcheck, a memory error detector
+==3958== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3958== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3958== Command: ./print_tokens2.exe
+==3958== 
+==3958== 
+==3958== HEAP SUMMARY:
+==3958==     in use at exit: 281 bytes in 8 blocks
+==3958==   total heap usage: 64 allocs, 56 frees, 1,625 bytes allocated
+==3958== 
+==3958== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3958==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3958==    by 0x804863E: main (print_tokens2.c:68)
+==3958== 
+==3958== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3958==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3958==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3958==    by 0x80486C9: main (print_tokens2.c:81)
+==3958== 
+==3958== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3958==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3958==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3958==    by 0x80486F5: main (print_tokens2.c:84)
+==3958== 
+==3958== 200 bytes in 5 blocks are definitely lost in loss record 4 of 4
+==3958==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3958==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3958==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3958==    by 0x80486B7: main (print_tokens2.c:78)
+==3958== 
+==3958== LEAK SUMMARY:
+==3958==    definitely lost: 280 bytes in 7 blocks
+==3958==    indirectly lost: 0 bytes in 0 blocks
+==3958==      possibly lost: 0 bytes in 0 blocks
+==3958==    still reachable: 1 bytes in 1 blocks
+==3958==         suppressed: 0 bytes in 0 blocks
+==3958== 
+==3958== For counts of detected and suppressed errors, rerun with: -v
+==3958== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3959== Memcheck, a memory error detector
+==3959== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3959== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3959== Command: ./print_tokens2.exe
+==3959== 
+==3959== 
+==3959== HEAP SUMMARY:
+==3959==     in use at exit: 241 bytes in 7 blocks
+==3959==   total heap usage: 57 allocs, 50 frees, 1,441 bytes allocated
+==3959== 
+==3959== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3959==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3959==    by 0x804863E: main (print_tokens2.c:68)
+==3959== 
+==3959== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3959==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3959==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3959==    by 0x80486C9: main (print_tokens2.c:81)
+==3959== 
+==3959== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3959==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3959==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3959==    by 0x80486F5: main (print_tokens2.c:84)
+==3959== 
+==3959== 160 bytes in 4 blocks are definitely lost in loss record 4 of 4
+==3959==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3959==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3959==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3959==    by 0x80486B7: main (print_tokens2.c:78)
+==3959== 
+==3959== LEAK SUMMARY:
+==3959==    definitely lost: 240 bytes in 6 blocks
+==3959==    indirectly lost: 0 bytes in 0 blocks
+==3959==      possibly lost: 0 bytes in 0 blocks
+==3959==    still reachable: 1 bytes in 1 blocks
+==3959==         suppressed: 0 bytes in 0 blocks
+==3959== 
+==3959== For counts of detected and suppressed errors, rerun with: -v
+==3959== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3960== Memcheck, a memory error detector
+==3960== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3960== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3960== Command: ./print_tokens2.exe
+==3960== 
+==3960== 
+==3960== HEAP SUMMARY:
+==3960==     in use at exit: 201 bytes in 6 blocks
+==3960==   total heap usage: 56 allocs, 50 frees, 1,401 bytes allocated
+==3960== 
+==3960== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3960==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3960==    by 0x804863E: main (print_tokens2.c:68)
+==3960== 
+==3960== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3960==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3960==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3960==    by 0x80486F5: main (print_tokens2.c:84)
+==3960== 
+==3960== 80 bytes in 2 blocks are definitely lost in loss record 3 of 4
+==3960==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3960==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3960==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3960==    by 0x80486B7: main (print_tokens2.c:78)
+==3960== 
+==3960== 80 bytes in 2 blocks are definitely lost in loss record 4 of 4
+==3960==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3960==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3960==    by 0x80486C9: main (print_tokens2.c:81)
+==3960== 
+==3960== LEAK SUMMARY:
+==3960==    definitely lost: 200 bytes in 5 blocks
+==3960==    indirectly lost: 0 bytes in 0 blocks
+==3960==      possibly lost: 0 bytes in 0 blocks
+==3960==    still reachable: 1 bytes in 1 blocks
+==3960==         suppressed: 0 bytes in 0 blocks
+==3960== 
+==3960== For counts of detected and suppressed errors, rerun with: -v
+==3960== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3961== Memcheck, a memory error detector
+==3961== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3961== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3961== Command: ./print_tokens2.exe
+==3961== 
+==3961== 
+==3961== HEAP SUMMARY:
+==3961==     in use at exit: 361 bytes in 10 blocks
+==3961==   total heap usage: 84 allocs, 74 frees, 2,137 bytes allocated
+==3961== 
+==3961== 1 bytes in 1 blocks are still reachable in loss record 1 of 5
+==3961==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3961==    by 0x804863E: main (print_tokens2.c:68)
+==3961== 
+==3961== 40 bytes in 1 blocks are definitely lost in loss record 2 of 5
+==3961==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3961==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3961==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3961==    by 0x80486B7: main (print_tokens2.c:78)
+==3961== 
+==3961== 40 bytes in 1 blocks are definitely lost in loss record 3 of 5
+==3961==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3961==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3961==    by 0x80486F5: main (print_tokens2.c:84)
+==3961== 
+==3961== 80 bytes in 2 blocks are definitely lost in loss record 4 of 5
+==3961==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3961==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3961==    by 0x80486C9: main (print_tokens2.c:81)
+==3961== 
+==3961== 200 bytes in 5 blocks are definitely lost in loss record 5 of 5
+==3961==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3961==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3961==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3961==    by 0x80486D5: main (print_tokens2.c:82)
+==3961== 
+==3961== LEAK SUMMARY:
+==3961==    definitely lost: 360 bytes in 9 blocks
+==3961==    indirectly lost: 0 bytes in 0 blocks
+==3961==      possibly lost: 0 bytes in 0 blocks
+==3961==    still reachable: 1 bytes in 1 blocks
+==3961==         suppressed: 0 bytes in 0 blocks
+==3961== 
+==3961== For counts of detected and suppressed errors, rerun with: -v
+==3961== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)
+==3963== Memcheck, a memory error detector
+==3963== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3963== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3963== Command: ./print_tokens2.exe
+==3963== 
+==3963== 
+==3963== HEAP SUMMARY:
+==3963==     in use at exit: 121 bytes in 4 blocks
+==3963==   total heap usage: 42 allocs, 38 frees, 1,033 bytes allocated
+==3963== 
+==3963== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3963==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3963==    by 0x804863E: main (print_tokens2.c:68)
+==3963== 
+==3963== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3963==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3963==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3963==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3963==    by 0x80486B7: main (print_tokens2.c:78)
+==3963== 
+==3963== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3963==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3963==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3963==    by 0x80486C9: main (print_tokens2.c:81)
+==3963== 
+==3963== 40 bytes in 1 blocks are definitely lost in loss record 4 of 4
+==3963==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3963==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3963==    by 0x80486F5: main (print_tokens2.c:84)
+==3963== 
+==3963== LEAK SUMMARY:
+==3963==    definitely lost: 120 bytes in 3 blocks
+==3963==    indirectly lost: 0 bytes in 0 blocks
+==3963==      possibly lost: 0 bytes in 0 blocks
+==3963==    still reachable: 1 bytes in 1 blocks
+==3963==         suppressed: 0 bytes in 0 blocks
+==3963== 
+==3963== For counts of detected and suppressed errors, rerun with: -v
+==3963== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3964== Memcheck, a memory error detector
+==3964== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3964== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3964== Command: ./print_tokens2.exe
+==3964== 
+==3964== 
+==3964== HEAP SUMMARY:
+==3964==     in use at exit: 241 bytes in 7 blocks
+==3964==   total heap usage: 75 allocs, 68 frees, 1,873 bytes allocated
+==3964== 
+==3964== 1 bytes in 1 blocks are still reachable in loss record 1 of 5
+==3964==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3964==    by 0x804863E: main (print_tokens2.c:68)
+==3964== 
+==3964== 40 bytes in 1 blocks are definitely lost in loss record 2 of 5
+==3964==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3964==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3964==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3964==    by 0x80486B7: main (print_tokens2.c:78)
+==3964== 
+==3964== 40 bytes in 1 blocks are definitely lost in loss record 3 of 5
+==3964==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3964==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3964==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3964==    by 0x80486D5: main (print_tokens2.c:82)
+==3964== 
+==3964== 40 bytes in 1 blocks are definitely lost in loss record 4 of 5
+==3964==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3964==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3964==    by 0x80486F5: main (print_tokens2.c:84)
+==3964== 
+==3964== 120 bytes in 3 blocks are definitely lost in loss record 5 of 5
+==3964==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3964==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3964==    by 0x80486C9: main (print_tokens2.c:81)
+==3964== 
+==3964== LEAK SUMMARY:
+==3964==    definitely lost: 240 bytes in 6 blocks
+==3964==    indirectly lost: 0 bytes in 0 blocks
+==3964==      possibly lost: 0 bytes in 0 blocks
+==3964==    still reachable: 1 bytes in 1 blocks
+==3964==         suppressed: 0 bytes in 0 blocks
+==3964== 
+==3964== For counts of detected and suppressed errors, rerun with: -v
+==3964== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)
+==3965== Memcheck, a memory error detector
+==3965== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3965== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3965== Command: ./print_tokens2.exe
+==3965== 
+==3965== 
+==3965== HEAP SUMMARY:
+==3965==     in use at exit: 281 bytes in 8 blocks
+==3965==   total heap usage: 68 allocs, 60 frees, 1,721 bytes allocated
+==3965== 
+==3965== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3965==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3965==    by 0x804863E: main (print_tokens2.c:68)
+==3965== 
+==3965== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3965==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3965==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3965==    by 0x80486F5: main (print_tokens2.c:84)
+==3965== 
+==3965== 80 bytes in 2 blocks are definitely lost in loss record 3 of 4
+==3965==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3965==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3965==    by 0x80486C9: main (print_tokens2.c:81)
+==3965== 
+==3965== 160 bytes in 4 blocks are definitely lost in loss record 4 of 4
+==3965==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3965==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3965==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3965==    by 0x80486B7: main (print_tokens2.c:78)
+==3965== 
+==3965== LEAK SUMMARY:
+==3965==    definitely lost: 280 bytes in 7 blocks
+==3965==    indirectly lost: 0 bytes in 0 blocks
+==3965==      possibly lost: 0 bytes in 0 blocks
+==3965==    still reachable: 1 bytes in 1 blocks
+==3965==         suppressed: 0 bytes in 0 blocks
+==3965== 
+==3965== For counts of detected and suppressed errors, rerun with: -v
+==3965== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3966== Memcheck, a memory error detector
+==3966== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3966== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3966== Command: ./print_tokens2.exe
+==3966== 
+==3966== 
+==3966== HEAP SUMMARY:
+==3966==     in use at exit: 721 bytes in 19 blocks
+==3966==   total heap usage: 119 allocs, 100 frees, 3,121 bytes allocated
+==3966== 
+==3966== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3966==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3966==    by 0x804863E: main (print_tokens2.c:68)
+==3966== 
+==3966== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3966==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3966==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3966==    by 0x80486C9: main (print_tokens2.c:81)
+==3966== 
+==3966== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3966==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3966==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3966==    by 0x80486F5: main (print_tokens2.c:84)
+==3966== 
+==3966== 640 bytes in 16 blocks are definitely lost in loss record 4 of 4
+==3966==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3966==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3966==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3966==    by 0x80486B7: main (print_tokens2.c:78)
+==3966== 
+==3966== LEAK SUMMARY:
+==3966==    definitely lost: 720 bytes in 18 blocks
+==3966==    indirectly lost: 0 bytes in 0 blocks
+==3966==      possibly lost: 0 bytes in 0 blocks
+==3966==    still reachable: 1 bytes in 1 blocks
+==3966==         suppressed: 0 bytes in 0 blocks
+==3966== 
+==3966== For counts of detected and suppressed errors, rerun with: -v
+==3966== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3968== Memcheck, a memory error detector
+==3968== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3968== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3968== Command: ./print_tokens2.exe
+==3968== 
+==3968== 
+==3968== HEAP SUMMARY:
+==3968==     in use at exit: 401 bytes in 11 blocks
+==3968==   total heap usage: 79 allocs, 68 frees, 2,033 bytes allocated
+==3968== 
+==3968== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3968==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3968==    by 0x804863E: main (print_tokens2.c:68)
+==3968== 
+==3968== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3968==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3968==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3968==    by 0x80486C9: main (print_tokens2.c:81)
+==3968== 
+==3968== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3968==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3968==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3968==    by 0x80486F5: main (print_tokens2.c:84)
+==3968== 
+==3968== 320 bytes in 8 blocks are definitely lost in loss record 4 of 4
+==3968==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3968==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3968==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3968==    by 0x80486B7: main (print_tokens2.c:78)
+==3968== 
+==3968== LEAK SUMMARY:
+==3968==    definitely lost: 400 bytes in 10 blocks
+==3968==    indirectly lost: 0 bytes in 0 blocks
+==3968==      possibly lost: 0 bytes in 0 blocks
+==3968==    still reachable: 1 bytes in 1 blocks
+==3968==         suppressed: 0 bytes in 0 blocks
+==3968== 
+==3968== For counts of detected and suppressed errors, rerun with: -v
+==3968== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3970== Memcheck, a memory error detector
+==3970== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3970== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3970== Command: ./print_tokens2.exe
+==3970== 
+==3970== 
+==3970== HEAP SUMMARY:
+==3970==     in use at exit: 641 bytes in 17 blocks
+==3970==   total heap usage: 109 allocs, 92 frees, 2,849 bytes allocated
+==3970== 
+==3970== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3970==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3970==    by 0x804863E: main (print_tokens2.c:68)
+==3970== 
+==3970== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3970==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3970==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3970==    by 0x80486C9: main (print_tokens2.c:81)
+==3970== 
+==3970== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3970==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3970==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3970==    by 0x80486F5: main (print_tokens2.c:84)
+==3970== 
+==3970== 560 bytes in 14 blocks are definitely lost in loss record 4 of 4
+==3970==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3970==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3970==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3970==    by 0x80486B7: main (print_tokens2.c:78)
+==3970== 
+==3970== LEAK SUMMARY:
+==3970==    definitely lost: 640 bytes in 16 blocks
+==3970==    indirectly lost: 0 bytes in 0 blocks
+==3970==      possibly lost: 0 bytes in 0 blocks
+==3970==    still reachable: 1 bytes in 1 blocks
+==3970==         suppressed: 0 bytes in 0 blocks
+==3970== 
+==3970== For counts of detected and suppressed errors, rerun with: -v
+==3970== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3971== Memcheck, a memory error detector
+==3971== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3971== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3971== Command: ./print_tokens2.exe
+==3971== 
+==3971== 
+==3971== HEAP SUMMARY:
+==3971==     in use at exit: 521 bytes in 14 blocks
+==3971==   total heap usage: 94 allocs, 80 frees, 2,441 bytes allocated
+==3971== 
+==3971== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3971==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3971==    by 0x804863E: main (print_tokens2.c:68)
+==3971== 
+==3971== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3971==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3971==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3971==    by 0x80486C9: main (print_tokens2.c:81)
+==3971== 
+==3971== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3971==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3971==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3971==    by 0x80486F5: main (print_tokens2.c:84)
+==3971== 
+==3971== 440 bytes in 11 blocks are definitely lost in loss record 4 of 4
+==3971==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3971==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3971==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3971==    by 0x80486B7: main (print_tokens2.c:78)
+==3971== 
+==3971== LEAK SUMMARY:
+==3971==    definitely lost: 520 bytes in 13 blocks
+==3971==    indirectly lost: 0 bytes in 0 blocks
+==3971==      possibly lost: 0 bytes in 0 blocks
+==3971==    still reachable: 1 bytes in 1 blocks
+==3971==         suppressed: 0 bytes in 0 blocks
+==3971== 
+==3971== For counts of detected and suppressed errors, rerun with: -v
+==3971== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3972== Memcheck, a memory error detector
+==3972== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3972== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3972== Command: ./print_tokens2.exe
+==3972== 
+==3972== 
+==3972== HEAP SUMMARY:
+==3972==     in use at exit: 201 bytes in 6 blocks
+==3972==   total heap usage: 60 allocs, 54 frees, 1,497 bytes allocated
+==3972== 
+==3972== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3972==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3972==    by 0x804863E: main (print_tokens2.c:68)
+==3972== 
+==3972== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3972==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3972==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3972==    by 0x80486F5: main (print_tokens2.c:84)
+==3972== 
+==3972== 80 bytes in 2 blocks are definitely lost in loss record 3 of 4
+==3972==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3972==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3972==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3972==    by 0x80486B7: main (print_tokens2.c:78)
+==3972== 
+==3972== 80 bytes in 2 blocks are definitely lost in loss record 4 of 4
+==3972==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3972==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3972==    by 0x80486C9: main (print_tokens2.c:81)
+==3972== 
+==3972== LEAK SUMMARY:
+==3972==    definitely lost: 200 bytes in 5 blocks
+==3972==    indirectly lost: 0 bytes in 0 blocks
+==3972==      possibly lost: 0 bytes in 0 blocks
+==3972==    still reachable: 1 bytes in 1 blocks
+==3972==         suppressed: 0 bytes in 0 blocks
+==3972== 
+==3972== For counts of detected and suppressed errors, rerun with: -v
+==3972== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3974== Memcheck, a memory error detector
+==3974== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3974== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3974== Command: ./print_tokens2.exe
+==3974== 
+==3974== 
+==3974== HEAP SUMMARY:
+==3974==     in use at exit: 841 bytes in 22 blocks
+==3974==   total heap usage: 134 allocs, 112 frees, 3,529 bytes allocated
+==3974== 
+==3974== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3974==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3974==    by 0x804863E: main (print_tokens2.c:68)
+==3974== 
+==3974== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3974==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3974==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3974==    by 0x80486C9: main (print_tokens2.c:81)
+==3974== 
+==3974== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3974==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3974==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3974==    by 0x80486F5: main (print_tokens2.c:84)
+==3974== 
+==3974== 760 bytes in 19 blocks are definitely lost in loss record 4 of 4
+==3974==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3974==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3974==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3974==    by 0x80486B7: main (print_tokens2.c:78)
+==3974== 
+==3974== LEAK SUMMARY:
+==3974==    definitely lost: 840 bytes in 21 blocks
+==3974==    indirectly lost: 0 bytes in 0 blocks
+==3974==      possibly lost: 0 bytes in 0 blocks
+==3974==    still reachable: 1 bytes in 1 blocks
+==3974==         suppressed: 0 bytes in 0 blocks
+==3974== 
+==3974== For counts of detected and suppressed errors, rerun with: -v
+==3974== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3975== Memcheck, a memory error detector
+==3975== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3975== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3975== Command: ./print_tokens2.exe
+==3975== 
+==3975== 
+==3975== HEAP SUMMARY:
+==3975==     in use at exit: 161 bytes in 5 blocks
+==3975==   total heap usage: 51 allocs, 46 frees, 1,265 bytes allocated
+==3975== 
+==3975== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3975==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3975==    by 0x804863E: main (print_tokens2.c:68)
+==3975== 
+==3975== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3975==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3975==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3975==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3975==    by 0x80486B7: main (print_tokens2.c:78)
+==3975== 
+==3975== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3975==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3975==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3975==    by 0x80486F5: main (print_tokens2.c:84)
+==3975== 
+==3975== 80 bytes in 2 blocks are definitely lost in loss record 4 of 4
+==3975==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3975==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3975==    by 0x80486C9: main (print_tokens2.c:81)
+==3975== 
+==3975== LEAK SUMMARY:
+==3975==    definitely lost: 160 bytes in 4 blocks
+==3975==    indirectly lost: 0 bytes in 0 blocks
+==3975==      possibly lost: 0 bytes in 0 blocks
+==3975==    still reachable: 1 bytes in 1 blocks
+==3975==         suppressed: 0 bytes in 0 blocks
+==3975== 
+==3975== For counts of detected and suppressed errors, rerun with: -v
+==3975== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3976== Memcheck, a memory error detector
+==3976== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3976== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3976== Command: ./print_tokens2.exe
+==3976== 
+==3976== 
+==3976== HEAP SUMMARY:
+==3976==     in use at exit: 441 bytes in 12 blocks
+==3976==   total heap usage: 84 allocs, 72 frees, 2,169 bytes allocated
+==3976== 
+==3976== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3976==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3976==    by 0x804863E: main (print_tokens2.c:68)
+==3976== 
+==3976== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3976==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3976==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3976==    by 0x80486C9: main (print_tokens2.c:81)
+==3976== 
+==3976== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3976==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3976==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3976==    by 0x80486F5: main (print_tokens2.c:84)
+==3976== 
+==3976== 360 bytes in 9 blocks are definitely lost in loss record 4 of 4
+==3976==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3976==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3976==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3976==    by 0x80486B7: main (print_tokens2.c:78)
+==3976== 
+==3976== LEAK SUMMARY:
+==3976==    definitely lost: 440 bytes in 11 blocks
+==3976==    indirectly lost: 0 bytes in 0 blocks
+==3976==      possibly lost: 0 bytes in 0 blocks
+==3976==    still reachable: 1 bytes in 1 blocks
+==3976==         suppressed: 0 bytes in 0 blocks
+==3976== 
+==3976== For counts of detected and suppressed errors, rerun with: -v
+==3976== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3977== Memcheck, a memory error detector
+==3977== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3977== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3977== Command: ./print_tokens2.exe
+==3977== 
+==3977== 
+==3977== HEAP SUMMARY:
+==3977==     in use at exit: 321 bytes in 9 blocks
+==3977==   total heap usage: 83 allocs, 74 frees, 2,097 bytes allocated
+==3977== 
+==3977== 1 bytes in 1 blocks are still reachable in loss record 1 of 5
+==3977==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3977==    by 0x804863E: main (print_tokens2.c:68)
+==3977== 
+==3977== 40 bytes in 1 blocks are definitely lost in loss record 2 of 5
+==3977==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3977==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3977==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3977==    by 0x80486B7: main (print_tokens2.c:78)
+==3977== 
+==3977== 40 bytes in 1 blocks are definitely lost in loss record 3 of 5
+==3977==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3977==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3977==    by 0x80486F5: main (print_tokens2.c:84)
+==3977== 
+==3977== 120 bytes in 3 blocks are definitely lost in loss record 4 of 5
+==3977==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3977==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3977==    by 0x80486C9: main (print_tokens2.c:81)
+==3977== 
+==3977== 120 bytes in 3 blocks are definitely lost in loss record 5 of 5
+==3977==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3977==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3977==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3977==    by 0x80486D5: main (print_tokens2.c:82)
+==3977== 
+==3977== LEAK SUMMARY:
+==3977==    definitely lost: 320 bytes in 8 blocks
+==3977==    indirectly lost: 0 bytes in 0 blocks
+==3977==      possibly lost: 0 bytes in 0 blocks
+==3977==    still reachable: 1 bytes in 1 blocks
+==3977==         suppressed: 0 bytes in 0 blocks
+==3977== 
+==3977== For counts of detected and suppressed errors, rerun with: -v
+==3977== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)
+==3980== Memcheck, a memory error detector
+==3980== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3980== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3980== Command: ./print_tokens2.exe
+==3980== 
+==3980== 
+==3980== HEAP SUMMARY:
+==3980==     in use at exit: 241 bytes in 7 blocks
+==3980==   total heap usage: 63 allocs, 56 frees, 1,585 bytes allocated
+==3980== 
+==3980== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3980==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3980==    by 0x804863E: main (print_tokens2.c:68)
+==3980== 
+==3980== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3980==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3980==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3980==    by 0x80486F5: main (print_tokens2.c:84)
+==3980== 
+==3980== 80 bytes in 2 blocks are definitely lost in loss record 3 of 4
+==3980==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3980==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3980==    by 0x80486C9: main (print_tokens2.c:81)
+==3980== 
+==3980== 120 bytes in 3 blocks are definitely lost in loss record 4 of 4
+==3980==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3980==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3980==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3980==    by 0x80486B7: main (print_tokens2.c:78)
+==3980== 
+==3980== LEAK SUMMARY:
+==3980==    definitely lost: 240 bytes in 6 blocks
+==3980==    indirectly lost: 0 bytes in 0 blocks
+==3980==      possibly lost: 0 bytes in 0 blocks
+==3980==    still reachable: 1 bytes in 1 blocks
+==3980==         suppressed: 0 bytes in 0 blocks
+==3980== 
+==3980== For counts of detected and suppressed errors, rerun with: -v
+==3980== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3981== Memcheck, a memory error detector
+==3981== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3981== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3981== Command: ./print_tokens2.exe
+==3981== 
+==3981== 
+==3981== HEAP SUMMARY:
+==3981==     in use at exit: 321 bytes in 9 blocks
+==3981==   total heap usage: 73 allocs, 64 frees, 1,857 bytes allocated
+==3981== 
+==3981== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3981==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3981==    by 0x804863E: main (print_tokens2.c:68)
+==3981== 
+==3981== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3981==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3981==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3981==    by 0x80486F5: main (print_tokens2.c:84)
+==3981== 
+==3981== 80 bytes in 2 blocks are definitely lost in loss record 3 of 4
+==3981==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3981==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3981==    by 0x80486C9: main (print_tokens2.c:81)
+==3981== 
+==3981== 200 bytes in 5 blocks are definitely lost in loss record 4 of 4
+==3981==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3981==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3981==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3981==    by 0x80486B7: main (print_tokens2.c:78)
+==3981== 
+==3981== LEAK SUMMARY:
+==3981==    definitely lost: 320 bytes in 8 blocks
+==3981==    indirectly lost: 0 bytes in 0 blocks
+==3981==      possibly lost: 0 bytes in 0 blocks
+==3981==    still reachable: 1 bytes in 1 blocks
+==3981==         suppressed: 0 bytes in 0 blocks
+==3981== 
+==3981== For counts of detected and suppressed errors, rerun with: -v
+==3981== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3982== Memcheck, a memory error detector
+==3982== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3982== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3982== Command: ./print_tokens2.exe
+==3982== 
+==3982== 
+==3982== HEAP SUMMARY:
+==3982==     in use at exit: 441 bytes in 12 blocks
+==3982==   total heap usage: 84 allocs, 72 frees, 2,169 bytes allocated
+==3982== 
+==3982== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3982==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3982==    by 0x804863E: main (print_tokens2.c:68)
+==3982== 
+==3982== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3982==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3982==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3982==    by 0x80486C9: main (print_tokens2.c:81)
+==3982== 
+==3982== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3982==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3982==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3982==    by 0x80486F5: main (print_tokens2.c:84)
+==3982== 
+==3982== 360 bytes in 9 blocks are definitely lost in loss record 4 of 4
+==3982==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3982==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3982==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3982==    by 0x80486B7: main (print_tokens2.c:78)
+==3982== 
+==3982== LEAK SUMMARY:
+==3982==    definitely lost: 440 bytes in 11 blocks
+==3982==    indirectly lost: 0 bytes in 0 blocks
+==3982==      possibly lost: 0 bytes in 0 blocks
+==3982==    still reachable: 1 bytes in 1 blocks
+==3982==         suppressed: 0 bytes in 0 blocks
+==3982== 
+==3982== For counts of detected and suppressed errors, rerun with: -v
+==3982== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3984== Memcheck, a memory error detector
+==3984== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3984== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3984== Command: ./print_tokens2.exe
+==3984== 
+==3984== 
+==3984== HEAP SUMMARY:
+==3984==     in use at exit: 521 bytes in 14 blocks
+==3984==   total heap usage: 100 allocs, 86 frees, 2,585 bytes allocated
+==3984== 
+==3984== 1 bytes in 1 blocks are still reachable in loss record 1 of 5
+==3984==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3984==    by 0x804863E: main (print_tokens2.c:68)
+==3984== 
+==3984== 40 bytes in 1 blocks are definitely lost in loss record 2 of 5
+==3984==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3984==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3984==    by 0x80486F5: main (print_tokens2.c:84)
+==3984== 
+==3984== 80 bytes in 2 blocks are definitely lost in loss record 3 of 5
+==3984==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3984==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3984==    by 0x80486C9: main (print_tokens2.c:81)
+==3984== 
+==3984== 120 bytes in 3 blocks are definitely lost in loss record 4 of 5
+==3984==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3984==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3984==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3984==    by 0x80486D5: main (print_tokens2.c:82)
+==3984== 
+==3984== 280 bytes in 7 blocks are definitely lost in loss record 5 of 5
+==3984==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3984==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3984==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3984==    by 0x80486B7: main (print_tokens2.c:78)
+==3984== 
+==3984== LEAK SUMMARY:
+==3984==    definitely lost: 520 bytes in 13 blocks
+==3984==    indirectly lost: 0 bytes in 0 blocks
+==3984==      possibly lost: 0 bytes in 0 blocks
+==3984==    still reachable: 1 bytes in 1 blocks
+==3984==         suppressed: 0 bytes in 0 blocks
+==3984== 
+==3984== For counts of detected and suppressed errors, rerun with: -v
+==3984== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)
+==3985== Memcheck, a memory error detector
+==3985== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3985== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3985== Command: ./print_tokens2.exe
+==3985== 
+==3985== 
+==3985== HEAP SUMMARY:
+==3985==     in use at exit: 441 bytes in 12 blocks
+==3985==   total heap usage: 84 allocs, 72 frees, 2,169 bytes allocated
+==3985== 
+==3985== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3985==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3985==    by 0x804863E: main (print_tokens2.c:68)
+==3985== 
+==3985== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3985==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3985==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3985==    by 0x80486C9: main (print_tokens2.c:81)
+==3985== 
+==3985== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3985==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3985==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3985==    by 0x80486F5: main (print_tokens2.c:84)
+==3985== 
+==3985== 360 bytes in 9 blocks are definitely lost in loss record 4 of 4
+==3985==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3985==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3985==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3985==    by 0x80486B7: main (print_tokens2.c:78)
+==3985== 
+==3985== LEAK SUMMARY:
+==3985==    definitely lost: 440 bytes in 11 blocks
+==3985==    indirectly lost: 0 bytes in 0 blocks
+==3985==      possibly lost: 0 bytes in 0 blocks
+==3985==    still reachable: 1 bytes in 1 blocks
+==3985==         suppressed: 0 bytes in 0 blocks
+==3985== 
+==3985== For counts of detected and suppressed errors, rerun with: -v
+==3985== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3986== Memcheck, a memory error detector
+==3986== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3986== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3986== Command: ./print_tokens2.exe
+==3986== 
+==3986== 
+==3986== HEAP SUMMARY:
+==3986==     in use at exit: 721 bytes in 19 blocks
+==3986==   total heap usage: 119 allocs, 100 frees, 3,121 bytes allocated
+==3986== 
+==3986== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3986==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3986==    by 0x804863E: main (print_tokens2.c:68)
+==3986== 
+==3986== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3986==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3986==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3986==    by 0x80486C9: main (print_tokens2.c:81)
+==3986== 
+==3986== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3986==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3986==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3986==    by 0x80486F5: main (print_tokens2.c:84)
+==3986== 
+==3986== 640 bytes in 16 blocks are definitely lost in loss record 4 of 4
+==3986==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3986==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3986==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3986==    by 0x80486B7: main (print_tokens2.c:78)
+==3986== 
+==3986== LEAK SUMMARY:
+==3986==    definitely lost: 720 bytes in 18 blocks
+==3986==    indirectly lost: 0 bytes in 0 blocks
+==3986==      possibly lost: 0 bytes in 0 blocks
+==3986==    still reachable: 1 bytes in 1 blocks
+==3986==         suppressed: 0 bytes in 0 blocks
+==3986== 
+==3986== For counts of detected and suppressed errors, rerun with: -v
+==3986== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3987== Memcheck, a memory error detector
+==3987== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3987== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3987== Command: ./print_tokens2.exe
+==3987== 
+==3987== 
+==3987== HEAP SUMMARY:
+==3987==     in use at exit: 481 bytes in 13 blocks
+==3987==   total heap usage: 89 allocs, 76 frees, 2,305 bytes allocated
+==3987== 
+==3987== 1 bytes in 1 blocks are still reachable in loss record 1 of 4
+==3987==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3987==    by 0x804863E: main (print_tokens2.c:68)
+==3987== 
+==3987== 40 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==3987==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3987==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3987==    by 0x80486C9: main (print_tokens2.c:81)
+==3987== 
+==3987== 40 bytes in 1 blocks are definitely lost in loss record 3 of 4
+==3987==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3987==    by 0x8048C28: print_token (print_tokens2.c:325)
+==3987==    by 0x80486F5: main (print_tokens2.c:84)
+==3987== 
+==3987== 400 bytes in 10 blocks are definitely lost in loss record 4 of 4
+==3987==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3987==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3987==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3987==    by 0x80486B7: main (print_tokens2.c:78)
+==3987== 
+==3987== LEAK SUMMARY:
+==3987==    definitely lost: 480 bytes in 12 blocks
+==3987==    indirectly lost: 0 bytes in 0 blocks
+==3987==      possibly lost: 0 bytes in 0 blocks
+==3987==    still reachable: 1 bytes in 1 blocks
+==3987==         suppressed: 0 bytes in 0 blocks
+==3987== 
+==3987== For counts of detected and suppressed errors, rerun with: -v
+==3987== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==3989== Memcheck, a memory error detector
+==3989== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3989== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3989== Command: ./print_tokens2.exe
+==3989== 
+==3989== 
+==3989== HEAP SUMMARY:
+==3989==     in use at exit: 1,377 bytes in 53 blocks
+==3989==   total heap usage: 53 allocs, 0 frees, 1,377 bytes allocated
+==3989== 
+==3989== 1 bytes in 1 blocks are still reachable in loss record 1 of 18
+==3989==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3989==    by 0x804863E: main (print_tokens2.c:68)
+==3989== 
+==3989== 8 bytes in 1 blocks are still reachable in loss record 2 of 18
+==3989==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3989==    by 0x80494DA: addToArray (global_array.c:31)
+==3989==    by 0x8048852: open_token_stream (print_tokens2.c:189)
+==3989==    by 0x80486A7: main (print_tokens2.c:77)
+==3989== 
+==3989== 8 bytes in 1 blocks are still reachable in loss record 3 of 18
+==3989==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3989==    by 0x80494DA: addToArray (global_array.c:31)
+==3989==    by 0x8048733: open_character_stream (print_tokens2.c:102)
+==3989==    by 0x8048868: open_token_stream (print_tokens2.c:192)
+==3989==    by 0x80486A7: main (print_tokens2.c:77)
+==3989== 
+==3989== 8 bytes in 1 blocks are still reachable in loss record 4 of 18
+==3989==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3989==    by 0x80494DA: addToArray (global_array.c:31)
+==3989==    by 0x80488A8: get_token (print_tokens2.c:209)
+==3989==    by 0x80486B7: main (print_tokens2.c:78)
+==3989== 
+==3989== 8 bytes in 1 blocks are still reachable in loss record 5 of 18
+==3989==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3989==    by 0x80494DA: addToArray (global_array.c:31)
+==3989==    by 0x80487C0: get_char (print_tokens2.c:123)
+==3989==    by 0x80488E7: get_token (print_tokens2.c:217)
+==3989==    by 0x80486B7: main (print_tokens2.c:78)
+==3989== 
+==3989== 8 bytes in 1 blocks are still reachable in loss record 6 of 18
+==3989==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3989==    by 0x80494DA: addToArray (global_array.c:31)
+==3989==    by 0x8048D81: is_eof_token (print_tokens2.c:364)
+==3989==    by 0x8048921: get_token (print_tokens2.c:223)
+==3989==    by 0x80486B7: main (print_tokens2.c:78)
+==3989== 
+==3989== 8 bytes in 1 blocks are still reachable in loss record 7 of 18
+==3989==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3989==    by 0x80494DA: addToArray (global_array.c:31)
+==3989==    by 0x80487C0: get_char (print_tokens2.c:123)
+==3989==    by 0x8048970: get_token (print_tokens2.c:227)
+==3989==    by 0x80486B7: main (print_tokens2.c:78)
+==3989== 
+==3989== 40 bytes in 1 blocks are still reachable in loss record 8 of 18
+==3989==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3989==    by 0x804883C: open_token_stream (print_tokens2.c:188)
+==3989==    by 0x80486A7: main (print_tokens2.c:77)
+==3989== 
+==3989== 40 bytes in 1 blocks are still reachable in loss record 9 of 18
+==3989==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3989==    by 0x804871D: open_character_stream (print_tokens2.c:101)
+==3989==    by 0x8048868: open_token_stream (print_tokens2.c:192)
+==3989==    by 0x80486A7: main (print_tokens2.c:77)
+==3989== 
+==3989== 40 bytes in 1 blocks are still reachable in loss record 10 of 18
+==3989==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3989==    by 0x8048892: get_token (print_tokens2.c:208)
+==3989==    by 0x80486B7: main (print_tokens2.c:78)
+==3989== 
+==3989== 40 bytes in 1 blocks are still reachable in loss record 11 of 18
+==3989==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3989==    by 0x80487AA: get_char (print_tokens2.c:122)
+==3989==    by 0x80488E7: get_token (print_tokens2.c:217)
+==3989==    by 0x80486B7: main (print_tokens2.c:78)
+==3989== 
+==3989== 40 bytes in 1 blocks are still reachable in loss record 12 of 18
+==3989==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3989==    by 0x8048D6B: is_eof_token (print_tokens2.c:363)
+==3989==    by 0x8048921: get_token (print_tokens2.c:223)
+==3989==    by 0x80486B7: main (print_tokens2.c:78)
+==3989== 
+==3989== 40 bytes in 1 blocks are still reachable in loss record 13 of 18
+==3989==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3989==    by 0x80487AA: get_char (print_tokens2.c:122)
+==3989==    by 0x8048970: get_token (print_tokens2.c:227)
+==3989==    by 0x80486B7: main (print_tokens2.c:78)
+==3989== 
+==3989== 64 bytes in 8 blocks are still reachable in loss record 14 of 18
+==3989==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3989==    by 0x80494DA: addToArray (global_array.c:31)
+==3989==    by 0x8048D81: is_eof_token (print_tokens2.c:364)
+==3989==    by 0x8048ACE: is_token_end (print_tokens2.c:274)
+==3989==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3989==    by 0x80486B7: main (print_tokens2.c:78)
+==3989== 
+==3989== 64 bytes in 8 blocks are still reachable in loss record 15 of 18
+==3989==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3989==    by 0x80494DA: addToArray (global_array.c:31)
+==3989==    by 0x80487C0: get_char (print_tokens2.c:123)
+==3989==    by 0x8048993: get_token (print_tokens2.c:233)
+==3989==    by 0x80486B7: main (print_tokens2.c:78)
+==3989== 
+==3989== 320 bytes in 8 blocks are still reachable in loss record 16 of 18
+==3989==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3989==    by 0x8048D6B: is_eof_token (print_tokens2.c:363)
+==3989==    by 0x8048ACE: is_token_end (print_tokens2.c:274)
+==3989==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3989==    by 0x80486B7: main (print_tokens2.c:78)
+==3989== 
+==3989== 320 bytes in 8 blocks are still reachable in loss record 17 of 18
+==3989==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3989==    by 0x80487AA: get_char (print_tokens2.c:122)
+==3989==    by 0x8048993: get_token (print_tokens2.c:233)
+==3989==    by 0x80486B7: main (print_tokens2.c:78)
+==3989== 
+==3989== 320 bytes in 8 blocks are definitely lost in loss record 18 of 18
+==3989==    at 0x402C5A9: malloc (vg_replace_malloc.c:296)
+==3989==    by 0x8048AAC: is_token_end (print_tokens2.c:269)
+==3989==    by 0x80489A9: get_token (print_tokens2.c:229)
+==3989==    by 0x80486B7: main (print_tokens2.c:78)
+==3989== 
+==3989== LEAK SUMMARY:
+==3989==    definitely lost: 320 bytes in 8 blocks
+==3989==    indirectly lost: 0 bytes in 0 blocks
+==3989==      possibly lost: 0 bytes in 0 blocks
+==3989==    still reachable: 1,057 bytes in 45 blocks
+==3989==         suppressed: 0 bytes in 0 blocks
+==3989== 
+==3989== For counts of detected and suppressed errors, rerun with: -v
+==3989== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

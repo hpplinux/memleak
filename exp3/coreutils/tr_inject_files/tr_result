@@ -1,0 +1,64 @@
+warning 0 's results:
+L_NOT_LEAK
+warning 1 's results:
+MAY-LEAK
+warning 2 's results:
+BLOAT
+warning 3 's results:
+L_NOT_LEAK
+warning 4 's results:
+BLOAT
+warning 5 's results:
+MAY-LEAK
+warning 6 's results:
+BLOAT
+warning 7 's results:
+LEAK
+warning 8 's results:
+MAY-LEAK
+warning 9 's results:
+BLOAT
+warning 10 's results:
+MAY-LEAK
+warning 11 's results:
+MAY-LEAK
+warning 12 's results:
+MAY-LEAK
+warning 13 's results:
+LEAK
+warning 14 's results:
+BLOAT
+warning 15 's results:
+BLOAT
+warning 16 's results:
+L_NOT_LEAK
+warning 17 's results:
+L_NOT_LEAK
+warning 18 's results:
+LEAK
+warning 19 's results:
+MAY-LEAK
+warning 20 's results:
+MAY-LEAK
+warning 21 's results:
+MAY-LEAK
+warning 22 's results:
+MAY-LEAK
+warning 23 's results:
+L_NOT_LEAK
+warning 24 's results:
+BLOAT
+warning 25 's results:
+L_NOT_LEAK
+warning 26 's results:
+L_NOT_LEAK
+warning 27 's results:
+MAY-LEAK
+warning 28 's results:
+LEAK
+warning 29 's results:
+MAY-LEAK
+warning 30 's results:
+LEAK
+warning 31 's results:
+LEAK

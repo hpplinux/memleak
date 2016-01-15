@@ -1,0 +1,53 @@
+MYLIB = ~/work/llvm-2.9/lib/Transforms/MyInstrumentation/mylib
+MYPASS = ~/work/llvm-2.9/Release+Asserts/lib
+
+SRCDIR = ../src
+CCLD= llvm-ld
+CFLAGS =  -Wall -Werror -g -emit-llvm -c
+NAME =
+
+all: $(NAME).ll $(NAME)_t.ll  $(NAME)_final.ll mem_track.ll
+
+
+$(NAME)_final.ll:$(NAME)_final.bc
+	llvm-dis $(NAME)_final.bc -o $(NAME)_final.ll
+
+$(NAME).ll:$(NAME).bc
+	llvm-dis $(SRCDIR)/$(NAME).bc -o $(NAME).ll
+
+$(NAME)_t.ll:$(NAME)_t.bc
+	llvm-dis $(NAME)_t.bc -o $(NAME)_t.ll
+
+mem_track.ll:$(MYLIB)/mem_track.bc
+	llvm-dis $(MYLIB)/mem_track.bc -o mem_track.ll
+
+$(NAME)_final $(NAME)_final.bc:$(NAME)_t.bc $(MYLIB)/mem_track.bc  
+	$(CCLD)   $(NAME)_t.bc  $(MYLIB)/mem_track.bc   -o $(NAME)_final 
+
+$(NAME)_t.bc:$(NAME).bc $(MYPASS)/MyInstrumentation.so
+	echo "run MyInstrumentation------------------------------------------------- "
+	opt -load $(MYPASS)/MyInstrumentation.so -MyInstrumentation -checkList=./fvdlResolve/bin/path/$(NAME) < $(SRCDIR)/$(NAME).bc > $(NAME)_t.bc
+
+$(MYPASS)/MyInstrumentation.so:$(MYLIB)/../MyInstrumentation.cpp
+	echo "make  MyInstrumentation---------------------------------------------- "
+	make -C $(MYLIB)/..
+
+global_array.bc: global_array.c
+	llvm-gcc $(CFLAGS) global_array.c -o global_array.bc
+
+#-g is necessage for print line number in the program
+$(NAME).bc: $(NAME).c
+	llvm-gcc $(CFLAGS) $(NAME).c -o $(NAME).bc
+
+$(MYLIB)/mem_track.bc:
+	echo "make mylib ---------------------------------------------------------------- "
+	make -C $(MYLIB)
+
+clean:
+	make -C $(SRCDIR) clean  
+	rm -f *.ll
+	rm -f $(NAME).bc
+	rm -f $(NAME)_t.bc
+	rm -f $(NAME)_final.bc
+	make -C $(MYLIB)/.. clean
+	make -C $(MYLIB) clean

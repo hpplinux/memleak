@@ -1,0 +1,386 @@
+desc: (none)
+cmd: klee-replay ./expand ./klee_out_expand_final/test000001.ktest
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=209091
+mem_heap_B=352
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=211978
+mem_heap_B=352
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=detailed
+n1: 352 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 352 0x40CD066: __fopen_internal (iofopen.c:76)
+  n1: 352 0x40CF899: fopen64 (iofopen64.c:39)
+   n0: 352 0x80497B2: main (klee-replay.c:242)
+#-----------
+snapshot=3
+#-----------
+time=211978
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=213245
+mem_heap_B=352
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=217913
+mem_heap_B=380
+mem_heap_extra_B=20
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=218357
+mem_heap_B=412
+mem_heap_extra_B=28
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=219802
+mem_heap_B=430
+mem_heap_extra_B=42
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=220204
+mem_heap_B=441
+mem_heap_extra_B=55
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=220610
+mem_heap_B=443
+mem_heap_extra_B=69
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=221010
+mem_heap_B=445
+mem_heap_extra_B=83
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=221408
+mem_heap_B=447
+mem_heap_extra_B=97
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=221806
+mem_heap_B=459
+mem_heap_extra_B=109
+mem_stacks_B=0
+heap_tree=detailed
+n4: 459 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 352 0x40CD066: __fopen_internal (iofopen.c:76)
+  n1: 352 0x40CD139: fopen@@GLIBC_2.1 (iofopen.c:107)
+   n1: 352 0x804C9C6: kTest_fromFile (KTest.cpp:95)
+    n0: 352 0x80497F0: main (klee-replay.c:254)
+  n0: 0 in 1 place, below massif's threshold (01.00%)
+ n1: 47 0x804C839: read_string(_IO_FILE*, char**) (KTest.cpp:46)
+  n1: 47 0x804CB1F: kTest_fromFile (KTest.cpp:123)
+   n0: 47 0x80497F0: main (klee-replay.c:254)
+ n1: 32 0x804CAFF: kTest_fromFile (KTest.cpp:118)
+  n0: 32 0x80497F0: main (klee-replay.c:254)
+ n1: 28 0x804CA02: kTest_fromFile (KTest.cpp:104)
+  n0: 28 0x80497F0: main (klee-replay.c:254)
+#-----------
+snapshot=13
+#-----------
+time=222207
+mem_heap_B=461
+mem_heap_extra_B=123
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=222605
+mem_heap_B=463
+mem_heap_extra_B=137
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=223399
+mem_heap_B=535
+mem_heap_extra_B=145
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=223650
+mem_heap_B=542
+mem_heap_extra_B=154
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=224037
+mem_heap_B=546
+mem_heap_extra_B=166
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=224422
+mem_heap_B=553
+mem_heap_extra_B=175
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=224808
+mem_heap_B=558
+mem_heap_extra_B=186
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=225200
+mem_heap_B=570
+mem_heap_extra_B=198
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=225588
+mem_heap_B=666
+mem_heap_extra_B=206
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=226008
+mem_heap_B=672
+mem_heap_extra_B=216
+mem_stacks_B=0
+heap_tree=detailed
+n6: 672 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 352 0x40CD066: __fopen_internal (iofopen.c:76)
+  n1: 352 0x40CD139: fopen@@GLIBC_2.1 (iofopen.c:107)
+   n1: 352 0x804C9C6: kTest_fromFile (KTest.cpp:95)
+    n0: 352 0x80497F0: main (klee-replay.c:254)
+  n0: 0 in 1 place, below massif's threshold (01.00%)
+ n1: 105 0x804CBDB: kTest_fromFile (KTest.cpp:144)
+  n0: 105 0x80497F0: main (klee-replay.c:254)
+ n2: 83 0x804C839: read_string(_IO_FILE*, char**) (KTest.cpp:46)
+  n1: 51 0x804CB1F: kTest_fromFile (KTest.cpp:123)
+   n0: 51 0x80497F0: main (klee-replay.c:254)
+  n1: 32 0x804CBB2: kTest_fromFile (KTest.cpp:140)
+   n0: 32 0x80497F0: main (klee-replay.c:254)
+ n1: 72 0x804CB7F: kTest_fromFile (KTest.cpp:135)
+  n0: 72 0x80497F0: main (klee-replay.c:254)
+ n1: 32 0x804CAFF: kTest_fromFile (KTest.cpp:118)
+  n0: 32 0x80497F0: main (klee-replay.c:254)
+ n1: 28 0x804CA02: kTest_fromFile (KTest.cpp:104)
+  n0: 28 0x80497F0: main (klee-replay.c:254)
+#-----------
+snapshot=23
+#-----------
+time=226394
+mem_heap_B=677
+mem_heap_extra_B=227
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=226780
+mem_heap_B=688
+mem_heap_extra_B=240
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=227167
+mem_heap_B=784
+mem_heap_extra_B=248
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=227587
+mem_heap_B=798
+mem_heap_extra_B=258
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=227975
+mem_heap_B=802
+mem_heap_extra_B=270
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=228591
+mem_heap_B=802
+mem_heap_extra_B=270
+mem_stacks_B=0
+heap_tree=detailed
+n6: 802 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 352 0x40CD066: __fopen_internal (iofopen.c:76)
+  n1: 352 0x40CD139: fopen@@GLIBC_2.1 (iofopen.c:107)
+   n1: 352 0x804C9C6: kTest_fromFile (KTest.cpp:95)
+    n0: 352 0x80497F0: main (klee-replay.c:254)
+  n0: 0 in 1 place, below massif's threshold (01.00%)
+ n1: 210 0x804CBDB: kTest_fromFile (KTest.cpp:144)
+  n0: 210 0x80497F0: main (klee-replay.c:254)
+ n2: 108 0x804C839: read_string(_IO_FILE*, char**) (KTest.cpp:46)
+  n1: 57 0x804CBB2: kTest_fromFile (KTest.cpp:140)
+   n0: 57 0x80497F0: main (klee-replay.c:254)
+  n1: 51 0x804CB1F: kTest_fromFile (KTest.cpp:123)
+   n0: 51 0x80497F0: main (klee-replay.c:254)
+ n1: 72 0x804CB7F: kTest_fromFile (KTest.cpp:135)
+  n0: 72 0x80497F0: main (klee-replay.c:254)
+ n1: 32 0x804CAFF: kTest_fromFile (KTest.cpp:118)
+  n0: 32 0x80497F0: main (klee-replay.c:254)
+ n1: 28 0x804CA02: kTest_fromFile (KTest.cpp:104)
+  n0: 28 0x80497F0: main (klee-replay.c:254)
+#-----------
+snapshot=29
+#-----------
+time=228591
+mem_heap_B=450
+mem_heap_extra_B=262
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=230519
+mem_heap_B=458
+mem_heap_extra_B=270
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=231891
+mem_heap_B=470
+mem_heap_extra_B=282
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=231966
+mem_heap_B=566
+mem_heap_extra_B=290
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=232066
+mem_heap_B=571
+mem_heap_extra_B=301
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=232472
+mem_heap_B=583
+mem_heap_extra_B=313
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=232534
+mem_heap_B=679
+mem_heap_extra_B=321
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=232627
+mem_heap_B=684
+mem_heap_extra_B=340
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=249083
+mem_heap_B=33480
+mem_heap_extra_B=352
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=254258
+mem_heap_B=33480
+mem_heap_extra_B=352
+mem_stacks_B=0
+heap_tree=peak
+n2: 33480 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32796 0x411B4C6: __alloc_dir (opendir.c:202)
+  n1: 32796 0x411B5F5: __opendirat (opendir.c:148)
+   n1: 32796 0x411B63B: opendir (opendir.c:156)
+    n1: 32796 0x804A6D4: delete_dir.constprop.7 (file-creator.c:317)
+     n1: 32796 0x804B50C: replay_create_files (file-creator.c:428)
+      n0: 32796 0x8049A51: main (klee-replay.c:287)
+ n0: 684 in 11 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=39
+#-----------
+time=254258
+mem_heap_B=684
+mem_heap_extra_B=340
+mem_stacks_B=0
+heap_tree=empty

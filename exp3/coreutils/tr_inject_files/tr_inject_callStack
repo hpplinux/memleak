@@ -1,0 +1,21 @@
+tr_inject.c 837
+1109 err = find_bracketed_repeat (es, i + 1, &char_to_repeat,
+                                       &repeat_count,
+                                       &closing_bracket_idx);
+
+915  
+build_spec_list
+
+1436
+  bool ok = unquote (s, &es) && build_spec_list (&es, spec_list);
+
+1889 
+   if (!parse_str (argv[optind], s1))
+    exit (EXIT_FAILURE);
+
+  if (non_option_args == 2)
+    {
+      spec_init (s2);
+      if (!parse_str (argv[optind + 1], s2))
+        exit (EXIT_FAILURE);
+    }

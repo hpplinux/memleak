@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for i in $@
+do
+	make clean NAME=${i}
+	make NAME=$i
+	#rm -r klee_out_${i}
+	rm -r klee_out_${i}_final
+	klee  --libc=uclibc --posix-runtime -output-dir=klee_out_${i}_final -max-time=1800 ./${i}_final.bc   --sym-args  0 5 10 --sym-files 0 2 100
+	#klee  --libc=uclibc --posix-runtime -output-dir=klee_out_$i ../src/${i}.bc --sym-args 0 3 2
+done
