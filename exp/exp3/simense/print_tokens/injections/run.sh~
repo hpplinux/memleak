@@ -1,4 +1,0 @@
-#!/bin/bash
-make clean NAME=$1
-make NAME=$1
-

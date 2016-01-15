@@ -21,7 +21,10 @@ make</br>
 </br>
 Benchmarks of siemens include "print_tokens" "print_tokens2" "replace" "tcas",
 just under benchmarks folder. Other benchamrks of coreutils are under /coreutils-8.15/src (eg. cat_inject_files).</br>
-Just run cll_result.sh and you can see the results.
+Just run cll_result.sh and you can see the results.</br>
+The classification can be a little different when you use run_crest with different arguments, so you can change the argument to get better result. Raw data here is the best result we have ever gotten.</br>
+</br>
+Exp3 includes test cases and scripts for Valgrind. 
 
 
 
