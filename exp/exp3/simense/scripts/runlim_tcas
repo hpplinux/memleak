@@ -1,0 +1,8 @@
+[runlim] version:		1.7
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4294967069 MB
+[runlim] argv[0]:		./tcasrun.sh
+[runlim] start:			Fri Jan 15 15:21:02 2016
+[runlim] main pid:		3836
+[runlim] sample:		0.3 seconds, 23.6 MB

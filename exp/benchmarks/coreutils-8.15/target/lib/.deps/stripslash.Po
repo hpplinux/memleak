@@ -1,0 +1,15 @@
+stripslash.o stripslash.o: ../../lib/stripslash.c ./config.h \
+  ../../lib/dirname.h \
+  /usr/lib/gcc/x86_64-linux-gnu/3.4.6/include/stdbool.h \
+  /usr/lib/gcc/x86_64-linux-gnu/3.4.6/include/stddef.h \
+  ../../lib/dosname.h
+
+./config.h:
+
+../../lib/dirname.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/3.4.6/include/stdbool.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/3.4.6/include/stddef.h:
+
+../../lib/dosname.h:

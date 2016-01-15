@@ -1,0 +1,42 @@
+#!/bin/bash
+NAME=$1
+#make NAME=$NAME clean
+#make NAME=$NAME
+temp=($@)
+args="${temp[@]:1}"
+
+for i in $args
+do 
+  echo $i
+  length=${#i}
+		if [ $length -eq 1 ]
+		then
+			TESTCASENAME=test00000$i.ktest
+		else if [ $length -eq 2 ]
+			then
+				TESTCASENAME=test0000$i.ktest
+			else if [ $length -eq 3 ]
+				then
+				 TESTCASENAME=test000$i.ktest
+			 else if [ $length -eq 4 ]
+					then
+					 TESTCASENAME=test00$i.ktest
+				 else if [ $length -eq 5 ]
+						then
+						 TESTCASENAME=test0$i.ktest
+					 else if [ $length -eq 6 ]
+							then
+						 	TESTCASENAME=test$i.ktest 
+				 		fi
+				 	fi
+				 fi
+			 fi
+		 fi
+	 fi
+		
+	echo $TESTCASENAME
+	echo ${NAME}_final
+ #valgrind  --trace-children=yes  klee-replay ./${NAME}_final ./klee_out_${NAME}_final/${TESTCASENAME[@]}
+
+ #valgrind --trace-children=yes  klee-replay ../src/${NAME} ./klee_out_${NAME}_final/${TESTCASENAME[@]}
+done

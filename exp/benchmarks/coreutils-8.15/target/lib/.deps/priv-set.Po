@@ -1,0 +1,6 @@
+priv-set.o priv-set.o: ../../lib/priv-set.c ./config.h \
+  ../../lib/priv-set.h
+
+./config.h:
+
+../../lib/priv-set.h:

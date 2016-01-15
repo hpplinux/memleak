@@ -1,0 +1,330 @@
+##########validating warnings of print_tokens##########
+warning 0 's results:
+L_NOT_LEAK
+warning 1 's results:
+L_NOT_LEAK
+warning 2 's results:
+L_NOT_LEAK
+warning 3 's results:
+BLOAT
+warning 4 's results:
+BLOAT
+warning 5 's results:
+LEAK
+warning 6 's results:
+LEAK
+warning 7 's results:
+BLOAT
+warning 8 's results:
+MAY-LEAK
+warning 9 's results:
+BLOAT
+warning 10 's results:
+MAY-LEAK
+warning 11 's results:
+BLOAT
+warning 12 's results:
+MAY-LEAK
+warning 13 's results:
+LEAK
+warning 14 's results:
+LEAK
+warning 15 's results:
+LEAK
+warning 16 's results:
+LEAK
+warning 17 's results:
+MAY-LEAK
+warning 18 's results:
+LEAK
+warning 19 's results:
+LEAK
+warning 20 's results:
+LEAK
+warning 21 's results:
+LEAK
+warning 22 's results:
+MAY-LEAK
+warning 23 's results:
+BLOAT
+warning 24 's results:
+L_NOT_LEAK
+##########validating warnings of print_tokens2##########
+warning 0 's results:
+BLOAT
+warning 1 's results:
+BLOAT
+warning 2 's results:
+L_NOT_LEAK
+warning 3 's results:
+BLOAT
+warning 4 's results:
+BLOAT
+warning 5 's results:
+LEAK
+warning 6 's results:
+L_NOT_LEAK
+warning 7 's results:
+BLOAT
+warning 8 's results:
+MAY-LEAK
+warning 9 's results:
+MAY-LEAK
+warning 10 's results:
+LEAK
+warning 11 's results:
+LEAK
+warning 12 's results:
+LEAK
+warning 13 's results:
+LEAK
+warning 14 's results:
+LEAK
+warning 15 's results:
+MAY-LEAK
+warning 16 's results:
+LEAK
+warning 17 's results:
+LEAK
+warning 18 's results:
+BLOAT
+warning 19 's results:
+BLOAT
+warning 20 's results:
+BLOAT
+warning 21 's results:
+L_NOT_LEAK
+warning 22 's results:
+MAY-LEAK
+warning 23 's results:
+L_NOT_LEAK
+warning 24 's results:
+MAY-LEAK
+warning 25 's results:
+L_NOT_LEAK
+warning 26 's results:
+L_NOT_LEAK
+warning 27 's results:
+L_NOT_LEAK
+warning 28 's results:
+BLOAT
+##########validating warnings of replace##########
+warning 0 's results:
+LEAK
+warning 1 's results:
+L_NOT_LEAK
+warning 2 's results:
+MAY-LEAK
+warning 3 's results:
+MAY-LEAK
+warning 4 's results:
+LEAK
+warning 5 's results:
+LEAK
+warning 6 's results:
+LEAK
+warning 7 's results:
+LEAK
+warning 8 's results:
+MAY-LEAK
+warning 9 's results:
+MAY-LEAK
+warning 10 's results:
+L_NOT_LEAK
+warning 11 's results:
+MAY-LEAK
+warning 12 's results:
+MAY-LEAK
+warning 13 's results:
+BLOAT
+warning 14 's results:
+L_NOT_LEAK
+warning 15 's results:
+BLOAT
+warning 16 's results:
+MAY-LEAK
+warning 17 's results:
+BLOAT
+##########validating warnings of tcas##########
+warning 0 's results:
+LEAK
+warning 1 's results:
+MAY-LEAK
+warning 2 's results:
+L_NOT_LEAK
+warning 3 's results:
+L_NOT_LEAK
+warning 4 's results:
+BLOAT
+warning 5 's results:
+L_NOT_LEAK
+warning 6 's results:
+MAY-LEAK
+warning 7 's results:
+L_NOT_LEAK
+##########validating warnings of cat##########
+warning 0 's results:
+LEAK
+warning 1 's results:
+MAY-LEAK
+warning 2 's results:
+MAY-LEAK
+warning 3 's results:
+L_NOT_LEAK
+warning 4 's results:
+MAY-LEAK
+warning 5 's results:
+LEAK
+warning 6 's results:
+BLOAT
+warning 7 's results:
+BLOAT
+##########validating warnings of expand##########
+warning 0 's results:
+LEAK
+warning 1 's results:
+BLOAT
+warning 2 's results:
+BLOAT
+warning 3 's results:
+L_NOT_LEAK
+warning 4 's results:
+MAY-LEAK
+warning 5 's results:
+MAY-LEAK
+##########validating warnings of head##########
+warning 0 's results:
+LEAK
+warning 1 's results:
+MAY-LEAK
+warning 2 's results:
+MAY-LEAK
+warning 3 's results:
+BLOAT
+warning 4 's results:
+MAY-LEAK
+warning 5 's results:
+MAY-LEAK
+warning 6 's results:
+LEAK
+warning 7 's results:
+MAY-LEAK
+warning 8 's results:
+L_NOT_LEAK
+warning 9 's results:
+MAY-LEAK
+warning 10 's results:
+LEAK
+warning 11 's results:
+MAY-LEAK
+warning 12 's results:
+MAY-LEAK
+warning 13 's results:
+LEAK
+warning 14 's results:
+MAY-LEAK
+warning 15 's results:
+L_NOT_LEAK
+warning 16 's results:
+L_NOT_LEAK
+warning 17 's results:
+L_NOT_LEAK
+warning 18 's results:
+L_NOT_LEAK
+warning 19 's results:
+L_NOT_LEAK
+##########validating warnings of tr##########
+warning 0 's results:
+L_NOT_LEAK
+warning 1 's results:
+MAY-LEAK
+warning 2 's results:
+BLOAT
+warning 3 's results:
+L_NOT_LEAK
+warning 4 's results:
+BLOAT
+warning 5 's results:
+MAY-LEAK
+warning 6 's results:
+BLOAT
+warning 7 's results:
+LEAK
+warning 8 's results:
+MAY-LEAK
+warning 9 's results:
+BLOAT
+warning 10 's results:
+MAY-LEAK
+warning 11 's results:
+MAY-LEAK
+warning 12 's results:
+MAY-LEAK
+warning 13 's results:
+LEAK
+warning 14 's results:
+BLOAT
+warning 15 's results:
+BLOAT
+warning 16 's results:
+L_NOT_LEAK
+warning 17 's results:
+L_NOT_LEAK
+warning 18 's results:
+LEAK
+warning 19 's results:
+MAY-LEAK
+warning 20 's results:
+MAY-LEAK
+warning 21 's results:
+MAY-LEAK
+warning 22 's results:
+MAY-LEAK
+warning 23 's results:
+L_NOT_LEAK
+warning 24 's results:
+BLOAT
+warning 25 's results:
+L_NOT_LEAK
+warning 26 's results:
+L_NOT_LEAK
+warning 27 's results:
+MAY-LEAK
+warning 28 's results:
+LEAK
+warning 29 's results:
+MAY-LEAK
+warning 30 's results:
+LEAK
+warning 31 's results:
+LEAK
+##########validating warnings of unexpand##########
+warning 0 's results:
+LEAK
+warning 1 's results:
+MAY-LEAK
+warning 2 's results:
+BLOAT
+warning 3 's results:
+BLOAT
+warning 4 's results:
+L_NOT_LEAK
+warning 5 's results:
+MAY-LEAK
+##########validating warnings of wc##########
+warning 0 's results:
+LEAK
+warning 1 's results:
+MAY-LEAK
+warning 2 's results:
+MAY-LEAK
+warning 3 's results:
+LEAK
+warning 4 's results:
+BLOAT
+warning 5 's results:
+L_NOT_LEAK
+warning 6 's results:
+BLOAT
+warning 7 's results:
+L_NOT_LEAK
