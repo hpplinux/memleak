@@ -29,7 +29,7 @@
       </header>
       <section>
         <p>This site presents our memory leak validation tool and experiment data.</p>
-		<p>SEG (Software Engineering Group) , Nanjing University</p>
+    <p>SEG (Software Engineering Group) , Nanjing University</p>
 
 <h3>
 <a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h3>
@@ -41,7 +41,11 @@
 
 <p>Warnings are classified into four categories: <b>MUST-LEAK</b>, <b>LIKELY-NOT-LEAK</b>, <b>BLOAT</b>, and <b>MAY-LEAK</b>.</p>
 <p>Warnings in MUST-LEAK are guaranteed by our analysis to be true leaks. Warnings in LIKELY-NOT-LEAK are highly likely to be false warnings. Although we cannot provide any formal guarantee that they are not leaks, we have high confidence that this is the case. Warnings in BLOAT are also not likely to be leaks but they should be fixed to improve performance. Using our approach, the developer's manual verification effort needs to be focused only on warnings in the category MAY-LEAK, which is often much smaller than the original set.</p>
-
+<h3>
+<a id="analysis-algorithm" class="anchor" href="#analysis-algorithm" aria-hidden="true"><span class="octicon octicon-link"></span></a>Analysis algorithm</h3>
+<img src="images/fig4.jpg"  border="0" />
+<p>Figure above shows an overview of our tool. <br>Given a static leak warning <i>w</i> = (<i>a</i>, <i>p</i>, <i>e</i>), two pre-processing phases are performed prior to the test case generation.  In the first phase, the target program is instrumented. The inserted code serves two major purposes: (1) it declares symbolic variables and marks the path fragment <i>p</i> in the source code for the subsequent path-directed concolic testing; (2) it tracks the usage of each run-time object created by the reported allocation site <i>a</i> and updates its tracking data. The second phase consists of a path reachability analysis, which is performed on the CFG of the program to determine, for each control flow branch, whether an execution following the branch could potentially reach each branch on <i>p</i>. This analysis is straightforward: it combines an intraprocedural control-dependence analysis with an interprocedural call graph traversal. The concolic testing engine is then modified to be aware of this reachability information so that the test case generation is guided to explore only the paths that may reach <i>p</i>, leading to a reduced search space in the symbolic execution.  The
+tracking data for each tracked object is inspected at the end of the execution to classify the warning.</p>
 <h3>
 <a id="experiment" class="anchor" href="#experiment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Experiment</h3>
 
@@ -49,42 +53,44 @@
 
 <h4>
 <a id="Experimental Subjects" class="anchor" href="#benchmark" aria-hidden="true"><span class="octicon octicon-link"></span></a>Experimental Subjects</h4>
-<p>We perform our first experiment using a set of programs from the Siemens and the <a href="http://www.gnu.org/software/coreutils/">coreutils</a> benchmark suites. These programs are relatively small and it is thus easy for us to understand their implementation logic to manually verify our classification results. To increase the number of static analysis warnings for each program, we manually injected both true and false leaks. </br>The programs are as follows:</p>
+<p>We perform our first and third experiment using a set of programs from the <a href="http://sir.unl.edu">Siemens</a> and the <a href="http://www.gnu.org/software/coreutils/">coreutils</a> benchmark suites. These programs are relatively small and it is thus easy for us to understand their implementation logic to manually verify our classification results and overhead. To increase the number of static analysis warnings for each program, we manually injected both true and false leaks. The injected benchmark can be download <a href="download/benchmark.zip">here</a>, including inject information table.</br>The programs are as follows:</p>
 <table>
-<tr><td>Program</td>	<td>Lines</td>	<td>Description</td></tr>
-<tr><td>replace</td>	<td>563</td>	<td>Replace pattern</td></tr>
-<tr><td>print_tokens</td>	<td>726</td>	<td>Lexical analysis</td></tr>
-<tr><td>print_tokens2</td>	<td>569</td>	<td>Lexical analysis</td></tr>
-<tr><td>tcas</td>	<td>173</td>	<td>Collision avoidance</td></tr>
-<tr><td>wc</td>	<td>802</td>	<td>Print newline, word, and byte counts for each file</td></tr>
-<tr><td>cat</td>	<td>785</td>	<td>Concatenate and write files</td></tr>
-<tr><td>head</td>	<td>1063</td>	<td>Output the first part of files</td></tr>
-<tr><td>tr</td>	<td>1949</td>	<td>Translate or delete characters</td></tr>
-<tr><td>expand</td>	<td>433</td>	<td>Convert tabs to spaces</td></tr>
-<tr><td>unexpand</td>	<td>535</td>	<td>Convert spaces to tabs</td></tr>
+<tr><td>Program</td>  <td>Lines</td>  <td>Description</td></tr>
+<tr><td>replace</td>  <td>563</td>  <td>Replace pattern</td></tr>
+<tr><td>print_tokens</td> <td>726</td>  <td>Lexical analysis</td></tr>
+<tr><td>print_tokens2</td>  <td>569</td>  <td>Lexical analysis</td></tr>
+<tr><td>tcas</td> <td>173</td>  <td>Collision avoidance</td></tr>
+<tr><td>wc</td> <td>802</td>  <td>Print newline, word, and byte counts for each file</td></tr>
+<tr><td>cat</td>  <td>785</td>  <td>Concatenate and write files</td></tr>
+<tr><td>head</td> <td>1063</td> <td>Output the first part of files</td></tr>
+<tr><td>tr</td> <td>1949</td> <td>Translate or delete characters</td></tr>
+<tr><td>expand</td> <td>433</td>  <td>Convert tabs to spaces</td></tr>
+<tr><td>unexpand</td> <td>535</td>  <td>Convert spaces to tabs</td></tr>
 </table>
 <p>The second experiment includes a case study on the use of our tool to validate leaks for a large-scale application (i.e.,texinfo-4.33).</p>
 <h4>
-<a id="result" class="anchor" href="#result" aria-hidden="true"><span class="octicon octicon-link"></span></a>Result</h4>
+<a id="result" class="anchor" href="#result" aria-hidden="true"><span class="octicon octicon-link"></span></a>Results</h4>
 <p>Experiment 1:</p>
 <table>
-<tr><td>Program</td>	<td>#L</td>	<td>#W</td>	<td>#S</td>	<td>#Must</td>	<td>#LNL</td>	<td>#B</td>	<td>#May</td>	<td>#F</td></tr>
-<tr><td>replace</td>	<td>563</td>	<td>18</td>	<td>3444</td>	<td>5</td>	<td>3</td>	<td>4</td>	<td>6</td>	<td>0</td></tr>
-<tr><td>print_tokens</td>	<td>726</td>	<td>22</td>	<td>17383</td>	<td>8</td>	<td>4</td>	<td>6</td>	<td>4</td>	<td>0</td></tr>
-<tr><td>print_tokens2</td>	<td>569</td>	<td>29</td>	<td>16943</td>	<td>8</td>	<td>7</td>	<td>9</td>	<td>5</td>	<td>0</td></tr>
-<tr><td>tcas</td>	<td>173</td>	<td>8</td>	<td>54</td>	<td>1</td>	<td>4</td>	<td>1</td>	<td>2</td>	<td>0</td></tr>
-<tr><td>wc</td>	<td>802</td>	<td>8</td>	<td>6000</td>	<td>2</td>	<td>2</td>	<td>2</td>	<td>2</td>	<td>0</td></tr>
-<tr><td>cat</td>	<td>785</td>	<td>8</td>	<td>4002</td>	<td>2</td>	<td>1</td>	<td>2</td>	<td>3</td>	<td>0</td></tr>
-<tr><td>head</td>	<td>1063</td>	<td>18</td>	<td>5007</td>	<td>4</td>	<td>6</td>	<td>2</td>	<td>6</td>	<td>0</td></tr>
-<tr><td>tr</td>	<td>1949</td>	<td>32</td>	<td>37281</td>	<td>11</td>	<td>8</td>	<td>8</td>	<td>5</td>	<td>0</td></tr>
-<tr><td>expand</td>	<td>433</td>	<td>6</td>	<td>3854</td>	<td>1</td>	<td>1</td>	<td>2</td>	<td>2</td>	<td>0</td></tr>
-<tr><td>unexpand</td>	<td>535</td>	<td>6</td>	<td>3996</td>	<td>1</td>	<td>1</td>	<td>2</td>	<td>2</td>	<td>0</td></tr>
+<tr><td>Program</td>  <td>#L</td> <td>#W</td> <td>#S</td> <td>#Must</td>  <td>#LNL</td> <td>#B</td> <td>#May</td> <td>#F</td>  <td>T0(s)</td> <td>T1(s)</td>  <td>Sp0(Mb)</td>  <td>Sp1(Mb)</td></tr>
+<tr><td>replace</td>  <td>563</td>  <td>18</td> <td>3444</td> <td>5</td>  <td>3</td>  <td>4</td>  <td>6</td>  <td>0</td>  <td>3.82</td> <td>3.95</td> <td>16.4</td> <td>20.4</td></tr>
+<tr><td>print_tokens</td> <td>726</td>  <td>22</td> <td>17383</td>  <td>8</td>  <td>4</td>  <td>6</td>  <td>4</td>  <td>0</td>  <td>3.7</td>  <td>5.0</td>  <td>16.9</td> <td>20.6</td></tr>
+<tr><td>print_tokens2</td>  <td>569</td>  <td>29</td> <td>16943</td>  <td>8</td>  <td>7</td>  <td>9</td>  <td>5</td>  <td>0</td>  <td>4.2</td>  <td>4.7</td>  <td>22.1</td> <td>22.2</td></tr>
+<tr><td>tcas</td> <td>173</td>  <td>8</td>  <td>54</td> <td>1</td>  <td>4</td>  <td>1</td>  <td>2</td>  <td>0</td>  <td>0.06</td> <td>0.07</td> <td>15.6</td> <td>19.8</td></tr>
+<tr><td>wc</td> <td>802</td>  <td>8</td>  <td>6000</td> <td>2</td>  <td>2</td>  <td>2</td>  <td>2</td>  <td>0</td>  <td>10.5</td> <td>15.5</td> <td>17.1</td> <td>22.8</td></tr>
+<tr><td>cat</td>  <td>785</td>  <td>8</td>  <td>4002</td> <td>2</td>  <td>1</td>  <td>2</td>  <td>3</td>  <td>0</td>  <td>16.9</td> <td>26.2</td> <td>15.7</td> <td>19.9</td></tr>
+<tr><td>head</td> <td>1063</td> <td>18</td> <td>5007</td> <td>4</td>  <td>6</td>  <td>2</td>  <td>6</td>  <td>0</td>  <td>12.2</td> <td>17.4</td> <td>16.3</td> <td>20.5</td></tr>
+<tr><td>tr</td> <td>1949</td> <td>32</td> <td>37281</td>  <td>11</td> <td>8</td>  <td>8</td>  <td>5</td>  <td>0</td>  <td>21.2</td> <td>26.5</td> <td>16.8</td> <td>21.2</td></tr>
+<tr><td>expand</td> <td>433</td>  <td>6</td>  <td>3854</td> <td>1</td>  <td>1</td>  <td>2</td>  <td>2</td>  <td>0</td>  <td>22.3</td> <td>26.9</td> <td>21.8</td> <td>25.9</td></tr>
+<tr><td>unexpand</td> <td>535</td>  <td>6</td>  <td>3996</td> <td>1</td>  <td>1</td>  <td>2</td>  <td>2</td>  <td>0</td>  <td>25.7</td> <td>26.2</td> <td>23.1</td> <td>27.2</td></tr>
 </table>
-<p>#L: Lines of code; </br>#W: Numbers of warnings reported by Fortify; </br>#S: Numbers of test cases generated by the path-guided concolic testing</br>#Must: MUST-LEAK; #LNL: LIKELY-NOT-LEAK; #B: BLOAT; #May: MAY-LEAK; </br>#F: False Classifications</p>
+<p>#L: Lines of code; </br>#W: Numbers of warnings reported by Fortify; </br>#S: Numbers of test cases generated by the path-guided concolic testing</br>#Must: MUST-LEAK; #LNL: LIKELY-NOT-LEAK; #B: BLOAT; #May: MAY-LEAK; </br>#F: False Classifications;</br>T0 T1:Running times;</br>Sp0 Sp1:Peak memory consumptions</p>
 
 <p>Experiment 2:</p>
 <p>Fortify reports a total of 91 warnings for texinfo. Our analysis has successfully classified 70 of them. For the rest 21 of the warnings, no test case can be generated by CREST to exercise their reported path fragments and thus they are classified as MAY-LEAK. This is primarily because the path constraints for these warnings are too complicated to solve. Among the 70 warnings that are precisely classified, the numbers of warnings in MUST-LEAK, LIKELY-NOT-LEAK, and BLOAT are, respectively, 69, 1, and 0.
 
+<p>Experiment 3:</p>
+<p></p>
 <h3>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
